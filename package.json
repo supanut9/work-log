@@ -1,0 +1,19 @@
+{
+  "name": "supanut9-work-log",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "scan": "node scripts/scan-repos.mjs",
+    "scan:fetch": "node scripts/scan-repos.mjs --fetch",
+    "report": "node scripts/update-report.mjs",
+    "report:fetch": "node scripts/update-report.mjs --fetch",
+    "db:up": "docker compose up -d",
+    "db:down": "docker compose down",
+    "db:migrate": "psql \"$DATABASE_URL\" -f db/migrations/001_phase1_schema.sql",
+    "db:seed": "psql \"$DATABASE_URL\" -f db/seed.sql"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
+

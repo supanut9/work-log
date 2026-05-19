@@ -1,0 +1,415 @@
+projects:
+  - id: auth-ui
+    name: auth-ui
+    path: ../auth-ui
+    enabled: true
+    product: auth
+    repo_kind: nested_git
+    app_kind: web
+    tags: [frontend, hosted-login, active]
+    tech: [react, vite, typescript]
+    task_board: ../docs/auth/phase-1-task-board.md
+    phase_docs: [../docs/auth/phase-2-plan.md, ../docs/auth/phase-2-ui-upgrade-plan.md]
+    architecture_docs: [../docs/auth/architecture-overview.md, ../docs/auth/auth-flow.md]
+    runbooks: []
+    branch_policy: main_verified_slice
+    push_policy: push_after_verified_slice
+    milestone_git_tags: phase_closeout
+    stats: [git_health, progress_health]
+
+  - id: auth-server
+    name: auth-server
+    path: ../auth-server
+    enabled: true
+    product: auth
+    repo_kind: nested_git
+    app_kind: api
+    tags: [backend, oauth, oidc, active]
+    tech: [go, postgres, redis]
+    task_board: ../docs/auth/phase-1-task-board.md
+    phase_docs: [../docs/auth/phase-2-plan.md]
+    architecture_docs: [../docs/auth/architecture-overview.md, ../docs/auth/auth-flow.md]
+    runbooks: []
+    branch_policy: main_verified_slice
+    push_policy: push_after_verified_slice
+    milestone_git_tags: phase_closeout
+    stats: [git_health, progress_health]
+
+  - id: ai-engineering-system
+    name: ai-engineering-system
+    path: ../ai-engineering-system
+    enabled: true
+    product: ai-engineering
+    repo_kind: nested_git
+    app_kind: tool
+    tags: [workflow, playbook, active]
+    tech: [markdown]
+    task_board: null
+    phase_docs: []
+    architecture_docs: []
+    runbooks: []
+    branch_policy: main_verified_slice
+    push_policy: push_after_verified_slice
+    milestone_git_tags: release_only
+    stats: [git_health, progress_health]
+
+  - id: cms-admin
+    name: cms-admin
+    path: ../cms-admin
+    enabled: true
+    product: cms
+    repo_kind: root_folder
+    app_kind: admin
+    tags: [frontend, admin, active]
+    tech: [nextjs, react, typescript, mantine]
+    task_board: ../docs/cms/cms-task-board.md
+    phase_docs: [../docs/cms/cms-phase-1.md]
+    architecture_docs: [../docs/cms/cms-architecture.md]
+    runbooks: []
+    branch_policy: main_verified_slice
+    push_policy: push_after_verified_slice
+    milestone_git_tags: phase_closeout
+    stats: [progress_health]
+
+  - id: cms-api
+    name: cms-api
+    path: ../cms-api
+    enabled: true
+    product: cms
+    repo_kind: root_folder
+    app_kind: api
+    tags: [backend, active]
+    tech: [fastify, prisma, postgres, typescript]
+    task_board: ../docs/cms/cms-task-board.md
+    phase_docs: [../docs/cms/cms-phase-1.md]
+    architecture_docs: [../docs/cms/cms-architecture.md]
+    runbooks: []
+    branch_policy: main_verified_slice
+    push_policy: push_after_verified_slice
+    milestone_git_tags: phase_closeout
+    stats: [progress_health]
+
+  - id: community-api
+    name: community-api
+    path: ../community-api
+    enabled: true
+    product: community
+    repo_kind: nested_git
+    app_kind: api
+    tags: [backend, community, active]
+    tech: [go, postgres]
+    task_board: ../docs/community/community-task-board.md
+    phase_docs: [../docs/community/community-phase-5.md, ../docs/community/community-phase-5-closeout.md]
+    architecture_docs: [../docs/community/community-architecture.md]
+    runbooks: []
+    branch_policy: main_verified_slice
+    push_policy: push_after_verified_slice
+    milestone_git_tags: phase_closeout
+    stats: [git_health, progress_health]
+
+  - id: community-web
+    name: community-web
+    path: ../community-web
+    enabled: true
+    product: community
+    repo_kind: nested_git
+    app_kind: web
+    tags: [frontend, community, active]
+    tech: [nextjs, react, typescript, bun]
+    task_board: ../docs/community/community-task-board.md
+    phase_docs: [../docs/community/community-phase-5.md, ../docs/community/community-phase-5-closeout.md]
+    architecture_docs: [../docs/community/community-architecture.md]
+    runbooks: []
+    branch_policy: main_verified_slice
+    push_policy: push_after_verified_slice
+    milestone_git_tags: phase_closeout
+    stats: [git_health, progress_health]
+
+  - id: form-admin
+    name: form-admin
+    path: ../form-admin
+    enabled: true
+    product: forms
+    repo_kind: root_folder
+    app_kind: admin
+    tags: [frontend, admin, active]
+    tech: [nextjs, react, typescript, mantine]
+    task_board: ../docs/forms/forms-task-board.md
+    phase_docs: [../docs/forms/forms-phase-1.md, ../docs/forms/forms-phase-2-main-forms.md]
+    architecture_docs: [../docs/forms/forms-architecture.md]
+    runbooks: [../docs/forms/forms-runbook.md]
+    branch_policy: main_verified_slice
+    push_policy: push_after_verified_slice
+    milestone_git_tags: phase_closeout
+    stats: [progress_health]
+
+  - id: form-api
+    name: form-api
+    path: ../form-api
+    enabled: true
+    product: forms
+    repo_kind: root_folder
+    app_kind: api
+    tags: [backend, active]
+    tech: [fastify, prisma, postgres, typescript]
+    task_board: ../docs/forms/forms-task-board.md
+    phase_docs: [../docs/forms/forms-phase-1.md, ../docs/forms/forms-phase-2-main-forms.md]
+    architecture_docs: [../docs/forms/forms-architecture.md]
+    runbooks: [../docs/forms/forms-runbook.md]
+    branch_policy: main_verified_slice
+    push_policy: push_after_verified_slice
+    milestone_git_tags: phase_closeout
+    stats: [progress_health]
+
+  - id: form-web
+    name: form-web
+    path: ../form-web
+    enabled: true
+    product: forms
+    repo_kind: root_folder
+    app_kind: web
+    tags: [frontend, renderer, active]
+    tech: [nextjs, react, typescript]
+    task_board: ../docs/forms/forms-task-board.md
+    phase_docs: [../docs/forms/forms-phase-1.md, ../docs/forms/forms-phase-2-main-forms.md]
+    architecture_docs: [../docs/forms/forms-architecture.md]
+    runbooks: [../docs/forms/forms-runbook.md]
+    branch_policy: main_verified_slice
+    push_policy: push_after_verified_slice
+    milestone_git_tags: phase_closeout
+    stats: [progress_health]
+
+  - id: interview-api
+    name: interview-api
+    path: ../interview-api
+    enabled: true
+    product: interview
+    repo_kind: nested_git
+    app_kind: api
+    tags: [backend, active]
+    tech: [fastify, postgres, typescript, bun]
+    task_board: ../docs/interview/interview-task-board.md
+    phase_docs: [../docs/interview/interview-phase-1.md, ../docs/interview/interview-phase-2-closeout.md]
+    architecture_docs: [../docs/interview/interview-architecture.md]
+    runbooks: []
+    branch_policy: main_verified_slice
+    push_policy: manual_only
+    milestone_git_tags: phase_closeout
+    stats: [git_health, progress_health]
+
+  - id: interview-web
+    name: interview-web
+    path: ../interview-web
+    enabled: true
+    product: interview
+    repo_kind: nested_git
+    app_kind: web
+    tags: [frontend, active]
+    tech: [nextjs, react, typescript, bun]
+    task_board: ../docs/interview/interview-task-board.md
+    phase_docs: [../docs/interview/interview-phase-1.md, ../docs/interview/interview-phase-2-closeout.md]
+    architecture_docs: [../docs/interview/interview-architecture.md]
+    runbooks: []
+    branch_policy: main_verified_slice
+    push_policy: manual_only
+    milestone_git_tags: phase_closeout
+    stats: [git_health, progress_health]
+
+  - id: knowledge-api
+    name: knowledge-api
+    path: ../knowledge-api
+    enabled: true
+    product: knowledge
+    repo_kind: nested_git
+    app_kind: api
+    tags: [backend, active]
+    tech: [go, postgres]
+    task_board: ../docs/knowledge/knowledge-task-board.md
+    phase_docs: [../docs/knowledge/knowledge-phase-3.md, ../docs/knowledge/knowledge-phase-3-closeout.md]
+    architecture_docs: [../docs/knowledge/knowledge-architecture.md]
+    runbooks: []
+    branch_policy: main_verified_slice
+    push_policy: push_after_verified_slice
+    milestone_git_tags: phase_closeout
+    stats: [git_health, progress_health]
+
+  - id: knowledge-web
+    name: knowledge-web
+    path: ../knowledge-web
+    enabled: true
+    product: knowledge
+    repo_kind: nested_git
+    app_kind: web
+    tags: [frontend, active]
+    tech: [nextjs, react, typescript, bun]
+    task_board: ../docs/knowledge/knowledge-task-board.md
+    phase_docs: [../docs/knowledge/knowledge-phase-3.md, ../docs/knowledge/knowledge-phase-3-closeout.md]
+    architecture_docs: [../docs/knowledge/knowledge-architecture.md]
+    runbooks: []
+    branch_policy: main_verified_slice
+    push_policy: push_after_verified_slice
+    milestone_git_tags: phase_closeout
+    stats: [git_health, progress_health]
+
+  - id: language-api
+    name: language-api
+    path: ../language-api
+    enabled: true
+    product: language
+    repo_kind: nested_git
+    app_kind: api
+    tags: [backend, learning, active]
+    tech: [go, postgres]
+    task_board: ../docs/language/language-task-board.md
+    phase_docs: [../docs/language/language-phase-9.md, ../docs/language/language-phase-9-closeout.md]
+    architecture_docs: [../docs/language/language-architecture.md]
+    runbooks: []
+    branch_policy: main_verified_slice
+    push_policy: push_after_verified_slice
+    milestone_git_tags: phase_closeout
+    stats: [git_health, progress_health]
+
+  - id: language-web
+    name: language-web
+    path: ../language-web
+    enabled: true
+    product: language
+    repo_kind: nested_git
+    app_kind: web
+    tags: [frontend, learning, active]
+    tech: [nextjs, react, typescript, bun]
+    task_board: ../docs/language/language-task-board.md
+    phase_docs: [../docs/language/language-phase-9.md, ../docs/language/language-phase-9-closeout.md]
+    architecture_docs: [../docs/language/language-architecture.md]
+    runbooks: []
+    branch_policy: main_verified_slice
+    push_policy: push_after_verified_slice
+    milestone_git_tags: phase_closeout
+    stats: [git_health, progress_health]
+
+  - id: office-empire-simulator
+    name: office-empire-simulator
+    path: ../office-empire-simulator
+    enabled: true
+    product: office-game
+    repo_kind: nested_git
+    app_kind: game
+    tags: [frontend, game, active]
+    tech: [vite, typescript, phaser]
+    task_board: ../office-empire-simulator/docs/task-board.md
+    phase_docs: [../office-empire-simulator/docs/12-phase-3-slice.md]
+    architecture_docs: []
+    runbooks: []
+    branch_policy: main_verified_slice
+    push_policy: manual_only
+    milestone_git_tags: phase_closeout
+    stats: [git_health, progress_health]
+
+  - id: orchestra
+    name: orchestra
+    path: ../orchestra
+    enabled: true
+    product: orchestra
+    repo_kind: nested_git
+    app_kind: tool
+    tags: [desktop, ai-workflow, active]
+    tech: [tauri, rust, react, typescript]
+    task_board: null
+    phase_docs: [../orchestra/ROADMAP.md]
+    architecture_docs: []
+    runbooks: []
+    branch_policy: main_verified_slice
+    push_policy: push_after_verified_slice
+    milestone_git_tags: release_only
+    stats: [git_health, progress_health]
+
+  - id: portal-api
+    name: portal-api
+    path: ../portal-api
+    enabled: true
+    product: portal
+    repo_kind: nested_git
+    app_kind: api
+    tags: [backend, active]
+    tech: [python]
+    task_board: null
+    phase_docs: []
+    architecture_docs: []
+    runbooks: []
+    branch_policy: main_verified_slice
+    push_policy: push_after_verified_slice
+    milestone_git_tags: phase_closeout
+    stats: [git_health]
+
+  - id: portal-web
+    name: portal-web
+    path: ../portal-web
+    enabled: true
+    product: portal
+    repo_kind: nested_git
+    app_kind: web
+    tags: [frontend, active]
+    tech: [nextjs, react, typescript]
+    task_board: null
+    phase_docs: []
+    architecture_docs: []
+    runbooks: []
+    branch_policy: main_verified_slice
+    push_policy: push_after_verified_slice
+    milestone_git_tags: phase_closeout
+    stats: [git_health]
+
+  - id: realtime-service
+    name: realtime-service
+    path: ../realtime-service
+    enabled: true
+    product: community
+    repo_kind: nested_git
+    app_kind: service
+    tags: [backend, realtime, active]
+    tech: [go, websocket, redis]
+    task_board: ../docs/community/community-task-board.md
+    phase_docs: [../docs/community/community-phase-5.md, ../docs/community/community-phase-5-closeout.md]
+    architecture_docs: [../docs/community/community-architecture.md]
+    runbooks: []
+    branch_policy: main_verified_slice
+    push_policy: push_after_verified_slice
+    milestone_git_tags: phase_closeout
+    stats: [git_health, progress_health]
+
+  - id: trading-api
+    name: trading-api
+    path: ../trading-api
+    enabled: true
+    product: trading
+    repo_kind: root_folder
+    app_kind: api
+    tags: [backend, active]
+    tech: [typescript]
+    task_board: null
+    phase_docs: []
+    architecture_docs: []
+    runbooks: []
+    branch_policy: main_verified_slice
+    push_policy: push_after_verified_slice
+    milestone_git_tags: phase_closeout
+    stats: [progress_health]
+
+  - id: trading-web
+    name: trading-web
+    path: ../trading-web
+    enabled: true
+    product: trading
+    repo_kind: root_folder
+    app_kind: web
+    tags: [frontend, active]
+    tech: [nextjs, react, typescript]
+    task_board: null
+    phase_docs: []
+    architecture_docs: []
+    runbooks: []
+    branch_policy: main_verified_slice
+    push_policy: push_after_verified_slice
+    milestone_git_tags: phase_closeout
+    stats: [progress_health]
+

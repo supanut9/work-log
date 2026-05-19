@@ -1,0 +1,1079 @@
+{
+  "captured_at": "2026-05-19T14:29:15.206Z",
+  "fetch_performed": false,
+  "totals": {
+    "configured_projects": 23,
+    "git_projects": 16,
+    "clean_git_projects": 6,
+    "dirty_projects": 10,
+    "commits_left_to_push_projects": 3,
+    "behind_projects": 0,
+    "divergent_projects": 0,
+    "missing_origin_projects": 3,
+    "fetch_failed_projects": 0,
+    "missing_path_projects": 0
+  },
+  "projects": [
+    {
+      "id": "auth-ui",
+      "name": "auth-ui",
+      "path": "../auth-ui",
+      "enabled": true,
+      "product": "auth",
+      "repo_kind": "nested_git",
+      "app_kind": "web",
+      "tags": [
+        "frontend",
+        "hosted-login",
+        "active"
+      ],
+      "tech": [
+        "react",
+        "vite",
+        "typescript"
+      ],
+      "task_board": "../docs/auth/phase-1-task-board.md",
+      "phase_docs": [
+        "../docs/auth/phase-2-plan.md",
+        "../docs/auth/phase-2-ui-upgrade-plan.md"
+      ],
+      "architecture_docs": [
+        "../docs/auth/architecture-overview.md",
+        "../docs/auth/auth-flow.md"
+      ],
+      "runbooks": [],
+      "branch_policy": "main_verified_slice",
+      "push_policy": "push_after_verified_slice",
+      "milestone_git_tags": "phase_closeout",
+      "stats": [
+        "git_health",
+        "progress_health"
+      ],
+      "absolute_path": "/Users/supanut.tan/projects/supanut9/auth-ui",
+      "exists": true,
+      "is_git_repo": true,
+      "branch": "main",
+      "dirty_files": 15,
+      "ahead": 0,
+      "behind": 0,
+      "has_origin": true,
+      "fetch_status": "not_fetched",
+      "last_commit_hash": "77450c2",
+      "last_commit_subject": "fix(security): [AUTH-000] use valid trivy setup action",
+      "remote_url": "git@github.com-supanut9:supanut9/auth-ui.git",
+      "attention": "dirty"
+    },
+    {
+      "id": "auth-server",
+      "name": "auth-server",
+      "path": "../auth-server",
+      "enabled": true,
+      "product": "auth",
+      "repo_kind": "nested_git",
+      "app_kind": "api",
+      "tags": [
+        "backend",
+        "oauth",
+        "oidc",
+        "active"
+      ],
+      "tech": [
+        "go",
+        "postgres",
+        "redis"
+      ],
+      "task_board": "../docs/auth/phase-1-task-board.md",
+      "phase_docs": [
+        "../docs/auth/phase-2-plan.md"
+      ],
+      "architecture_docs": [
+        "../docs/auth/architecture-overview.md",
+        "../docs/auth/auth-flow.md"
+      ],
+      "runbooks": [],
+      "branch_policy": "main_verified_slice",
+      "push_policy": "push_after_verified_slice",
+      "milestone_git_tags": "phase_closeout",
+      "stats": [
+        "git_health",
+        "progress_health"
+      ],
+      "absolute_path": "/Users/supanut.tan/projects/supanut9/auth-server",
+      "exists": true,
+      "is_git_repo": true,
+      "branch": "main",
+      "dirty_files": 31,
+      "ahead": 0,
+      "behind": 0,
+      "has_origin": true,
+      "fetch_status": "not_fetched",
+      "last_commit_hash": "24dbb80",
+      "last_commit_subject": "fix(security): [AUTH-000] use valid trivy setup action",
+      "remote_url": "git@github.com-supanut9:supanut9/auth-server.git",
+      "attention": "dirty"
+    },
+    {
+      "id": "ai-engineering-system",
+      "name": "ai-engineering-system",
+      "path": "../ai-engineering-system",
+      "enabled": true,
+      "product": "ai-engineering",
+      "repo_kind": "nested_git",
+      "app_kind": "tool",
+      "tags": [
+        "workflow",
+        "playbook",
+        "active"
+      ],
+      "tech": [
+        "markdown"
+      ],
+      "task_board": null,
+      "phase_docs": [],
+      "architecture_docs": [],
+      "runbooks": [],
+      "branch_policy": "main_verified_slice",
+      "push_policy": "push_after_verified_slice",
+      "milestone_git_tags": "release_only",
+      "stats": [
+        "git_health",
+        "progress_health"
+      ],
+      "absolute_path": "/Users/supanut.tan/projects/supanut9/ai-engineering-system",
+      "exists": true,
+      "is_git_repo": true,
+      "branch": "main",
+      "dirty_files": 0,
+      "ahead": 0,
+      "behind": 0,
+      "has_origin": true,
+      "fetch_status": "not_fetched",
+      "last_commit_hash": "e719c13",
+      "last_commit_subject": "feat(hooks): SessionStart hook prints workflow phase on session start (#51)",
+      "remote_url": "https://github.com/supanut9/ai-engineering-system.git",
+      "attention": ""
+    },
+    {
+      "id": "cms-admin",
+      "name": "cms-admin",
+      "path": "../cms-admin",
+      "enabled": true,
+      "product": "cms",
+      "repo_kind": "root_folder",
+      "app_kind": "admin",
+      "tags": [
+        "frontend",
+        "admin",
+        "active"
+      ],
+      "tech": [
+        "nextjs",
+        "react",
+        "typescript",
+        "mantine"
+      ],
+      "task_board": "../docs/cms/cms-task-board.md",
+      "phase_docs": [
+        "../docs/cms/cms-phase-1.md"
+      ],
+      "architecture_docs": [
+        "../docs/cms/cms-architecture.md"
+      ],
+      "runbooks": [],
+      "branch_policy": "main_verified_slice",
+      "push_policy": "push_after_verified_slice",
+      "milestone_git_tags": "phase_closeout",
+      "stats": [
+        "progress_health"
+      ],
+      "absolute_path": "/Users/supanut.tan/projects/supanut9/cms-admin",
+      "exists": true,
+      "is_git_repo": false,
+      "branch": null,
+      "dirty_files": 0,
+      "ahead": null,
+      "behind": null,
+      "has_origin": false,
+      "fetch_status": "not_git",
+      "last_commit_hash": null,
+      "last_commit_subject": null,
+      "remote_url": null,
+      "attention": ""
+    },
+    {
+      "id": "cms-api",
+      "name": "cms-api",
+      "path": "../cms-api",
+      "enabled": true,
+      "product": "cms",
+      "repo_kind": "root_folder",
+      "app_kind": "api",
+      "tags": [
+        "backend",
+        "active"
+      ],
+      "tech": [
+        "fastify",
+        "prisma",
+        "postgres",
+        "typescript"
+      ],
+      "task_board": "../docs/cms/cms-task-board.md",
+      "phase_docs": [
+        "../docs/cms/cms-phase-1.md"
+      ],
+      "architecture_docs": [
+        "../docs/cms/cms-architecture.md"
+      ],
+      "runbooks": [],
+      "branch_policy": "main_verified_slice",
+      "push_policy": "push_after_verified_slice",
+      "milestone_git_tags": "phase_closeout",
+      "stats": [
+        "progress_health"
+      ],
+      "absolute_path": "/Users/supanut.tan/projects/supanut9/cms-api",
+      "exists": true,
+      "is_git_repo": false,
+      "branch": null,
+      "dirty_files": 0,
+      "ahead": null,
+      "behind": null,
+      "has_origin": false,
+      "fetch_status": "not_git",
+      "last_commit_hash": null,
+      "last_commit_subject": null,
+      "remote_url": null,
+      "attention": ""
+    },
+    {
+      "id": "community-api",
+      "name": "community-api",
+      "path": "../community-api",
+      "enabled": true,
+      "product": "community",
+      "repo_kind": "nested_git",
+      "app_kind": "api",
+      "tags": [
+        "backend",
+        "community",
+        "active"
+      ],
+      "tech": [
+        "go",
+        "postgres"
+      ],
+      "task_board": "../docs/community/community-task-board.md",
+      "phase_docs": [
+        "../docs/community/community-phase-5.md",
+        "../docs/community/community-phase-5-closeout.md"
+      ],
+      "architecture_docs": [
+        "../docs/community/community-architecture.md"
+      ],
+      "runbooks": [],
+      "branch_policy": "main_verified_slice",
+      "push_policy": "push_after_verified_slice",
+      "milestone_git_tags": "phase_closeout",
+      "stats": [
+        "git_health",
+        "progress_health"
+      ],
+      "absolute_path": "/Users/supanut.tan/projects/supanut9/community-api",
+      "exists": true,
+      "is_git_repo": true,
+      "branch": "main",
+      "dirty_files": 0,
+      "ahead": 0,
+      "behind": 0,
+      "has_origin": true,
+      "fetch_status": "not_fetched",
+      "last_commit_hash": "25913e3",
+      "last_commit_subject": "Mirror language-api: thin httpserver/ public wrap over internal/httpserver",
+      "remote_url": "git@github.com-supanut9:supanut9/community-api.git",
+      "attention": ""
+    },
+    {
+      "id": "community-web",
+      "name": "community-web",
+      "path": "../community-web",
+      "enabled": true,
+      "product": "community",
+      "repo_kind": "nested_git",
+      "app_kind": "web",
+      "tags": [
+        "frontend",
+        "community",
+        "active"
+      ],
+      "tech": [
+        "nextjs",
+        "react",
+        "typescript",
+        "bun"
+      ],
+      "task_board": "../docs/community/community-task-board.md",
+      "phase_docs": [
+        "../docs/community/community-phase-5.md",
+        "../docs/community/community-phase-5-closeout.md"
+      ],
+      "architecture_docs": [
+        "../docs/community/community-architecture.md"
+      ],
+      "runbooks": [],
+      "branch_policy": "main_verified_slice",
+      "push_policy": "push_after_verified_slice",
+      "milestone_git_tags": "phase_closeout",
+      "stats": [
+        "git_health",
+        "progress_health"
+      ],
+      "absolute_path": "/Users/supanut.tan/projects/supanut9/community-web",
+      "exists": true,
+      "is_git_repo": true,
+      "branch": "main",
+      "dirty_files": 0,
+      "ahead": 0,
+      "behind": 0,
+      "has_origin": true,
+      "fetch_status": "not_fetched",
+      "last_commit_hash": "140a70f",
+      "last_commit_subject": "fix(auth): fall back to non-silent OAuth on consent_required + tag logout returnTo with sso=tried",
+      "remote_url": "git@github.com-supanut9:supanut9/community-web.git",
+      "attention": ""
+    },
+    {
+      "id": "form-admin",
+      "name": "form-admin",
+      "path": "../form-admin",
+      "enabled": true,
+      "product": "forms",
+      "repo_kind": "root_folder",
+      "app_kind": "admin",
+      "tags": [
+        "frontend",
+        "admin",
+        "active"
+      ],
+      "tech": [
+        "nextjs",
+        "react",
+        "typescript",
+        "mantine"
+      ],
+      "task_board": "../docs/forms/forms-task-board.md",
+      "phase_docs": [
+        "../docs/forms/forms-phase-1.md",
+        "../docs/forms/forms-phase-2-main-forms.md"
+      ],
+      "architecture_docs": [
+        "../docs/forms/forms-architecture.md"
+      ],
+      "runbooks": [
+        "../docs/forms/forms-runbook.md"
+      ],
+      "branch_policy": "main_verified_slice",
+      "push_policy": "push_after_verified_slice",
+      "milestone_git_tags": "phase_closeout",
+      "stats": [
+        "progress_health"
+      ],
+      "absolute_path": "/Users/supanut.tan/projects/supanut9/form-admin",
+      "exists": true,
+      "is_git_repo": false,
+      "branch": null,
+      "dirty_files": 0,
+      "ahead": null,
+      "behind": null,
+      "has_origin": false,
+      "fetch_status": "not_git",
+      "last_commit_hash": null,
+      "last_commit_subject": null,
+      "remote_url": null,
+      "attention": ""
+    },
+    {
+      "id": "form-api",
+      "name": "form-api",
+      "path": "../form-api",
+      "enabled": true,
+      "product": "forms",
+      "repo_kind": "root_folder",
+      "app_kind": "api",
+      "tags": [
+        "backend",
+        "active"
+      ],
+      "tech": [
+        "fastify",
+        "prisma",
+        "postgres",
+        "typescript"
+      ],
+      "task_board": "../docs/forms/forms-task-board.md",
+      "phase_docs": [
+        "../docs/forms/forms-phase-1.md",
+        "../docs/forms/forms-phase-2-main-forms.md"
+      ],
+      "architecture_docs": [
+        "../docs/forms/forms-architecture.md"
+      ],
+      "runbooks": [
+        "../docs/forms/forms-runbook.md"
+      ],
+      "branch_policy": "main_verified_slice",
+      "push_policy": "push_after_verified_slice",
+      "milestone_git_tags": "phase_closeout",
+      "stats": [
+        "progress_health"
+      ],
+      "absolute_path": "/Users/supanut.tan/projects/supanut9/form-api",
+      "exists": true,
+      "is_git_repo": false,
+      "branch": null,
+      "dirty_files": 0,
+      "ahead": null,
+      "behind": null,
+      "has_origin": false,
+      "fetch_status": "not_git",
+      "last_commit_hash": null,
+      "last_commit_subject": null,
+      "remote_url": null,
+      "attention": ""
+    },
+    {
+      "id": "form-web",
+      "name": "form-web",
+      "path": "../form-web",
+      "enabled": true,
+      "product": "forms",
+      "repo_kind": "root_folder",
+      "app_kind": "web",
+      "tags": [
+        "frontend",
+        "renderer",
+        "active"
+      ],
+      "tech": [
+        "nextjs",
+        "react",
+        "typescript"
+      ],
+      "task_board": "../docs/forms/forms-task-board.md",
+      "phase_docs": [
+        "../docs/forms/forms-phase-1.md",
+        "../docs/forms/forms-phase-2-main-forms.md"
+      ],
+      "architecture_docs": [
+        "../docs/forms/forms-architecture.md"
+      ],
+      "runbooks": [
+        "../docs/forms/forms-runbook.md"
+      ],
+      "branch_policy": "main_verified_slice",
+      "push_policy": "push_after_verified_slice",
+      "milestone_git_tags": "phase_closeout",
+      "stats": [
+        "progress_health"
+      ],
+      "absolute_path": "/Users/supanut.tan/projects/supanut9/form-web",
+      "exists": true,
+      "is_git_repo": false,
+      "branch": null,
+      "dirty_files": 0,
+      "ahead": null,
+      "behind": null,
+      "has_origin": false,
+      "fetch_status": "not_git",
+      "last_commit_hash": null,
+      "last_commit_subject": null,
+      "remote_url": null,
+      "attention": ""
+    },
+    {
+      "id": "interview-api",
+      "name": "interview-api",
+      "path": "../interview-api",
+      "enabled": true,
+      "product": "interview",
+      "repo_kind": "nested_git",
+      "app_kind": "api",
+      "tags": [
+        "backend",
+        "active"
+      ],
+      "tech": [
+        "fastify",
+        "postgres",
+        "typescript",
+        "bun"
+      ],
+      "task_board": "../docs/interview/interview-task-board.md",
+      "phase_docs": [
+        "../docs/interview/interview-phase-1.md",
+        "../docs/interview/interview-phase-2-closeout.md"
+      ],
+      "architecture_docs": [
+        "../docs/interview/interview-architecture.md"
+      ],
+      "runbooks": [],
+      "branch_policy": "main_verified_slice",
+      "push_policy": "manual_only",
+      "milestone_git_tags": "phase_closeout",
+      "stats": [
+        "git_health",
+        "progress_health"
+      ],
+      "absolute_path": "/Users/supanut.tan/projects/supanut9/interview-api",
+      "exists": true,
+      "is_git_repo": true,
+      "branch": "main",
+      "dirty_files": 12,
+      "ahead": null,
+      "behind": null,
+      "has_origin": false,
+      "fetch_status": "missing_origin",
+      "last_commit_hash": "e90e9bc",
+      "last_commit_subject": "docs(plan): [INT-065] update phase 9 state",
+      "remote_url": null,
+      "attention": "missing origin"
+    },
+    {
+      "id": "interview-web",
+      "name": "interview-web",
+      "path": "../interview-web",
+      "enabled": true,
+      "product": "interview",
+      "repo_kind": "nested_git",
+      "app_kind": "web",
+      "tags": [
+        "frontend",
+        "active"
+      ],
+      "tech": [
+        "nextjs",
+        "react",
+        "typescript",
+        "bun"
+      ],
+      "task_board": "../docs/interview/interview-task-board.md",
+      "phase_docs": [
+        "../docs/interview/interview-phase-1.md",
+        "../docs/interview/interview-phase-2-closeout.md"
+      ],
+      "architecture_docs": [
+        "../docs/interview/interview-architecture.md"
+      ],
+      "runbooks": [],
+      "branch_policy": "main_verified_slice",
+      "push_policy": "manual_only",
+      "milestone_git_tags": "phase_closeout",
+      "stats": [
+        "git_health",
+        "progress_health"
+      ],
+      "absolute_path": "/Users/supanut.tan/projects/supanut9/interview-web",
+      "exists": true,
+      "is_git_repo": true,
+      "branch": "main",
+      "dirty_files": 3,
+      "ahead": null,
+      "behind": null,
+      "has_origin": false,
+      "fetch_status": "missing_origin",
+      "last_commit_hash": "16f59a8",
+      "last_commit_subject": "docs(plan): [INT-065] plan phase 9 personalized workspace",
+      "remote_url": null,
+      "attention": "missing origin"
+    },
+    {
+      "id": "knowledge-api",
+      "name": "knowledge-api",
+      "path": "../knowledge-api",
+      "enabled": true,
+      "product": "knowledge",
+      "repo_kind": "nested_git",
+      "app_kind": "api",
+      "tags": [
+        "backend",
+        "active"
+      ],
+      "tech": [
+        "go",
+        "postgres"
+      ],
+      "task_board": "../docs/knowledge/knowledge-task-board.md",
+      "phase_docs": [
+        "../docs/knowledge/knowledge-phase-3.md",
+        "../docs/knowledge/knowledge-phase-3-closeout.md"
+      ],
+      "architecture_docs": [
+        "../docs/knowledge/knowledge-architecture.md"
+      ],
+      "runbooks": [],
+      "branch_policy": "main_verified_slice",
+      "push_policy": "push_after_verified_slice",
+      "milestone_git_tags": "phase_closeout",
+      "stats": [
+        "git_health",
+        "progress_health"
+      ],
+      "absolute_path": "/Users/supanut.tan/projects/supanut9/knowledge-api",
+      "exists": true,
+      "is_git_repo": true,
+      "branch": "main",
+      "dirty_files": 0,
+      "ahead": 0,
+      "behind": 0,
+      "has_origin": true,
+      "fetch_status": "not_fetched",
+      "last_commit_hash": "44742f9",
+      "last_commit_subject": "Restore real api/index.go (revert debug minimal handler)",
+      "remote_url": "git@github.com-supanut9:supanut9/knowledge-api.git",
+      "attention": ""
+    },
+    {
+      "id": "knowledge-web",
+      "name": "knowledge-web",
+      "path": "../knowledge-web",
+      "enabled": true,
+      "product": "knowledge",
+      "repo_kind": "nested_git",
+      "app_kind": "web",
+      "tags": [
+        "frontend",
+        "active"
+      ],
+      "tech": [
+        "nextjs",
+        "react",
+        "typescript",
+        "bun"
+      ],
+      "task_board": "../docs/knowledge/knowledge-task-board.md",
+      "phase_docs": [
+        "../docs/knowledge/knowledge-phase-3.md",
+        "../docs/knowledge/knowledge-phase-3-closeout.md"
+      ],
+      "architecture_docs": [
+        "../docs/knowledge/knowledge-architecture.md"
+      ],
+      "runbooks": [],
+      "branch_policy": "main_verified_slice",
+      "push_policy": "push_after_verified_slice",
+      "milestone_git_tags": "phase_closeout",
+      "stats": [
+        "git_health",
+        "progress_health"
+      ],
+      "absolute_path": "/Users/supanut.tan/projects/supanut9/knowledge-web",
+      "exists": true,
+      "is_git_repo": true,
+      "branch": "main",
+      "dirty_files": 1,
+      "ahead": 0,
+      "behind": 0,
+      "has_origin": true,
+      "fetch_status": "not_fetched",
+      "last_commit_hash": "126ba6a",
+      "last_commit_subject": "fix(api): tolerate knowledge-api unavailability in getMe",
+      "remote_url": "git@github.com-supanut9:supanut9/knowledge-web.git",
+      "attention": "dirty"
+    },
+    {
+      "id": "language-api",
+      "name": "language-api",
+      "path": "../language-api",
+      "enabled": true,
+      "product": "language",
+      "repo_kind": "nested_git",
+      "app_kind": "api",
+      "tags": [
+        "backend",
+        "learning",
+        "active"
+      ],
+      "tech": [
+        "go",
+        "postgres"
+      ],
+      "task_board": "../docs/language/language-task-board.md",
+      "phase_docs": [
+        "../docs/language/language-phase-9.md",
+        "../docs/language/language-phase-9-closeout.md"
+      ],
+      "architecture_docs": [
+        "../docs/language/language-architecture.md"
+      ],
+      "runbooks": [],
+      "branch_policy": "main_verified_slice",
+      "push_policy": "push_after_verified_slice",
+      "milestone_git_tags": "phase_closeout",
+      "stats": [
+        "git_health",
+        "progress_health"
+      ],
+      "absolute_path": "/Users/supanut.tan/projects/supanut9/language-api",
+      "exists": true,
+      "is_git_repo": true,
+      "branch": "main",
+      "dirty_files": 23,
+      "ahead": 1,
+      "behind": 0,
+      "has_origin": true,
+      "fetch_status": "not_fetched",
+      "last_commit_hash": "f0aba1d",
+      "last_commit_subject": "feat(learning): [LANG-089] complete phase 9 learning os",
+      "remote_url": "git@github.com-supanut9:supanut9/language-api.git",
+      "attention": "commits to push"
+    },
+    {
+      "id": "language-web",
+      "name": "language-web",
+      "path": "../language-web",
+      "enabled": true,
+      "product": "language",
+      "repo_kind": "nested_git",
+      "app_kind": "web",
+      "tags": [
+        "frontend",
+        "learning",
+        "active"
+      ],
+      "tech": [
+        "nextjs",
+        "react",
+        "typescript",
+        "bun"
+      ],
+      "task_board": "../docs/language/language-task-board.md",
+      "phase_docs": [
+        "../docs/language/language-phase-9.md",
+        "../docs/language/language-phase-9-closeout.md"
+      ],
+      "architecture_docs": [
+        "../docs/language/language-architecture.md"
+      ],
+      "runbooks": [],
+      "branch_policy": "main_verified_slice",
+      "push_policy": "push_after_verified_slice",
+      "milestone_git_tags": "phase_closeout",
+      "stats": [
+        "git_health",
+        "progress_health"
+      ],
+      "absolute_path": "/Users/supanut.tan/projects/supanut9/language-web",
+      "exists": true,
+      "is_git_repo": true,
+      "branch": "main",
+      "dirty_files": 53,
+      "ahead": 1,
+      "behind": 0,
+      "has_origin": true,
+      "fetch_status": "not_fetched",
+      "last_commit_hash": "29f4ffb",
+      "last_commit_subject": "feat(learning): [LANG-089] complete phase 9 learning os",
+      "remote_url": "git@github.com-supanut9:supanut9/language-web.git",
+      "attention": "commits to push"
+    },
+    {
+      "id": "office-empire-simulator",
+      "name": "office-empire-simulator",
+      "path": "../office-empire-simulator",
+      "enabled": true,
+      "product": "office-game",
+      "repo_kind": "nested_git",
+      "app_kind": "game",
+      "tags": [
+        "frontend",
+        "game",
+        "active"
+      ],
+      "tech": [
+        "vite",
+        "typescript",
+        "phaser"
+      ],
+      "task_board": "../office-empire-simulator/docs/task-board.md",
+      "phase_docs": [
+        "../office-empire-simulator/docs/12-phase-3-slice.md"
+      ],
+      "architecture_docs": [],
+      "runbooks": [],
+      "branch_policy": "main_verified_slice",
+      "push_policy": "manual_only",
+      "milestone_git_tags": "phase_closeout",
+      "stats": [
+        "git_health",
+        "progress_health"
+      ],
+      "absolute_path": "/Users/supanut.tan/projects/supanut9/office-empire-simulator",
+      "exists": true,
+      "is_git_repo": true,
+      "branch": "main",
+      "dirty_files": 15,
+      "ahead": null,
+      "behind": null,
+      "has_origin": false,
+      "fetch_status": "missing_origin",
+      "last_commit_hash": null,
+      "last_commit_subject": null,
+      "remote_url": null,
+      "attention": "missing origin"
+    },
+    {
+      "id": "orchestra",
+      "name": "orchestra",
+      "path": "../orchestra",
+      "enabled": true,
+      "product": "orchestra",
+      "repo_kind": "nested_git",
+      "app_kind": "tool",
+      "tags": [
+        "desktop",
+        "ai-workflow",
+        "active"
+      ],
+      "tech": [
+        "tauri",
+        "rust",
+        "react",
+        "typescript"
+      ],
+      "task_board": null,
+      "phase_docs": [
+        "../orchestra/ROADMAP.md"
+      ],
+      "architecture_docs": [],
+      "runbooks": [],
+      "branch_policy": "main_verified_slice",
+      "push_policy": "push_after_verified_slice",
+      "milestone_git_tags": "release_only",
+      "stats": [
+        "git_health",
+        "progress_health"
+      ],
+      "absolute_path": "/Users/supanut.tan/projects/supanut9/orchestra",
+      "exists": true,
+      "is_git_repo": true,
+      "branch": "main",
+      "dirty_files": 1,
+      "ahead": 0,
+      "behind": 0,
+      "has_origin": true,
+      "fetch_status": "not_fetched",
+      "last_commit_hash": "764c0ac",
+      "last_commit_subject": "fix(terminal): grab focus so typed keys actually reach the PTY",
+      "remote_url": "https://github.com/supanut9/orchestra.git",
+      "attention": "dirty"
+    },
+    {
+      "id": "portal-api",
+      "name": "portal-api",
+      "path": "../portal-api",
+      "enabled": true,
+      "product": "portal",
+      "repo_kind": "nested_git",
+      "app_kind": "api",
+      "tags": [
+        "backend",
+        "active"
+      ],
+      "tech": [
+        "python"
+      ],
+      "task_board": null,
+      "phase_docs": [],
+      "architecture_docs": [],
+      "runbooks": [],
+      "branch_policy": "main_verified_slice",
+      "push_policy": "push_after_verified_slice",
+      "milestone_git_tags": "phase_closeout",
+      "stats": [
+        "git_health"
+      ],
+      "absolute_path": "/Users/supanut.tan/projects/supanut9/portal-api",
+      "exists": true,
+      "is_git_repo": true,
+      "branch": "main",
+      "dirty_files": 0,
+      "ahead": 0,
+      "behind": 0,
+      "has_origin": true,
+      "fetch_status": "not_fetched",
+      "last_commit_hash": "411d3e7",
+      "last_commit_subject": "Make .githooks scripts executable so pre-commit/pre-push actually run",
+      "remote_url": "git@github.com-supanut9:supanut9/portal-api.git",
+      "attention": ""
+    },
+    {
+      "id": "portal-web",
+      "name": "portal-web",
+      "path": "../portal-web",
+      "enabled": true,
+      "product": "portal",
+      "repo_kind": "nested_git",
+      "app_kind": "web",
+      "tags": [
+        "frontend",
+        "active"
+      ],
+      "tech": [
+        "nextjs",
+        "react",
+        "typescript"
+      ],
+      "task_board": null,
+      "phase_docs": [],
+      "architecture_docs": [],
+      "runbooks": [],
+      "branch_policy": "main_verified_slice",
+      "push_policy": "push_after_verified_slice",
+      "milestone_git_tags": "phase_closeout",
+      "stats": [
+        "git_health"
+      ],
+      "absolute_path": "/Users/supanut.tan/projects/supanut9/portal-web",
+      "exists": true,
+      "is_git_repo": true,
+      "branch": "main",
+      "dirty_files": 0,
+      "ahead": 0,
+      "behind": 0,
+      "has_origin": true,
+      "fetch_status": "not_fetched",
+      "last_commit_hash": "e7f8c9a",
+      "last_commit_subject": "chore(debug): log per-step failure in readSession to find why home shows signed-out with valid cookies",
+      "remote_url": "git@github.com-supanut9:supanut9/portal-web.git",
+      "attention": ""
+    },
+    {
+      "id": "realtime-service",
+      "name": "realtime-service",
+      "path": "../realtime-service",
+      "enabled": true,
+      "product": "community",
+      "repo_kind": "nested_git",
+      "app_kind": "service",
+      "tags": [
+        "backend",
+        "realtime",
+        "active"
+      ],
+      "tech": [
+        "go",
+        "websocket",
+        "redis"
+      ],
+      "task_board": "../docs/community/community-task-board.md",
+      "phase_docs": [
+        "../docs/community/community-phase-5.md",
+        "../docs/community/community-phase-5-closeout.md"
+      ],
+      "architecture_docs": [
+        "../docs/community/community-architecture.md"
+      ],
+      "runbooks": [],
+      "branch_policy": "main_verified_slice",
+      "push_policy": "push_after_verified_slice",
+      "milestone_git_tags": "phase_closeout",
+      "stats": [
+        "git_health",
+        "progress_health"
+      ],
+      "absolute_path": "/Users/supanut.tan/projects/supanut9/realtime-service",
+      "exists": true,
+      "is_git_repo": true,
+      "branch": "main",
+      "dirty_files": 4,
+      "ahead": 8,
+      "behind": 0,
+      "has_origin": true,
+      "fetch_status": "not_fetched",
+      "last_commit_hash": "295bd3c",
+      "last_commit_subject": "feat(presence): [COMM-045] add workspace map presence",
+      "remote_url": "git@github.com-supanut9:supanut9/realtime-service.git",
+      "attention": "commits to push"
+    },
+    {
+      "id": "trading-api",
+      "name": "trading-api",
+      "path": "../trading-api",
+      "enabled": true,
+      "product": "trading",
+      "repo_kind": "root_folder",
+      "app_kind": "api",
+      "tags": [
+        "backend",
+        "active"
+      ],
+      "tech": [
+        "typescript"
+      ],
+      "task_board": null,
+      "phase_docs": [],
+      "architecture_docs": [],
+      "runbooks": [],
+      "branch_policy": "main_verified_slice",
+      "push_policy": "push_after_verified_slice",
+      "milestone_git_tags": "phase_closeout",
+      "stats": [
+        "progress_health"
+      ],
+      "absolute_path": "/Users/supanut.tan/projects/supanut9/trading-api",
+      "exists": true,
+      "is_git_repo": false,
+      "branch": null,
+      "dirty_files": 0,
+      "ahead": null,
+      "behind": null,
+      "has_origin": false,
+      "fetch_status": "not_git",
+      "last_commit_hash": null,
+      "last_commit_subject": null,
+      "remote_url": null,
+      "attention": ""
+    },
+    {
+      "id": "trading-web",
+      "name": "trading-web",
+      "path": "../trading-web",
+      "enabled": true,
+      "product": "trading",
+      "repo_kind": "root_folder",
+      "app_kind": "web",
+      "tags": [
+        "frontend",
+        "active"
+      ],
+      "tech": [
+        "nextjs",
+        "react",
+        "typescript"
+      ],
+      "task_board": null,
+      "phase_docs": [],
+      "architecture_docs": [],
+      "runbooks": [],
+      "branch_policy": "main_verified_slice",
+      "push_policy": "push_after_verified_slice",
+      "milestone_git_tags": "phase_closeout",
+      "stats": [
+        "progress_health"
+      ],
+      "absolute_path": "/Users/supanut.tan/projects/supanut9/trading-web",
+      "exists": true,
+      "is_git_repo": false,
+      "branch": null,
+      "dirty_files": 0,
+      "ahead": null,
+      "behind": null,
+      "has_origin": false,
+      "fetch_status": "not_git",
+      "last_commit_hash": null,
+      "last_commit_subject": null,
+      "remote_url": null,
+      "attention": ""
+    }
+  ]
+}
