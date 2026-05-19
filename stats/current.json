@@ -1,5 +1,5 @@
 {
-  "captured_at": "2026-05-19T14:29:15.206Z",
+  "captured_at": "2026-05-19T14:30:28.284Z",
   "fetch_performed": false,
   "totals": {
     "configured_projects": 23,
@@ -528,7 +528,7 @@
       "exists": true,
       "is_git_repo": true,
       "branch": "main",
-      "dirty_files": 12,
+      "dirty_files": 14,
       "ahead": null,
       "behind": null,
       "has_origin": false,
@@ -576,7 +576,7 @@
       "exists": true,
       "is_git_repo": true,
       "branch": "main",
-      "dirty_files": 3,
+      "dirty_files": 5,
       "ahead": null,
       "behind": null,
       "has_origin": false,

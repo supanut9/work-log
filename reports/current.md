@@ -1,6 +1,6 @@
 # Supanut9 Work Log Current Report
 
-Captured: 2026-05-19T14:29:15.206Z
+Captured: 2026-05-19T14:30:28.284Z
 
 Fetch performed: no
 
@@ -23,8 +23,8 @@ Fetch performed: no
 | --- | --- | --- | ---: | ---: | ---: | --- | --- |
 | `auth-ui` | auth | main | 15 | 0 | 0 | yes | dirty |
 | `auth-server` | auth | main | 31 | 0 | 0 | yes | dirty |
-| `interview-api` | interview | main | 12 |  |  | no | missing origin |
-| `interview-web` | interview | main | 3 |  |  | no | missing origin |
+| `interview-api` | interview | main | 14 |  |  | no | missing origin |
+| `interview-web` | interview | main | 5 |  |  | no | missing origin |
 | `knowledge-web` | knowledge | main | 1 | 0 | 0 | yes | dirty |
 | `language-api` | language | main | 23 | 1 | 0 | yes | commits to push |
 | `language-web` | language | main | 53 | 1 | 0 | yes | commits to push |
@@ -80,8 +80,8 @@ Fetch performed: no
 | `form-admin` | forms |  | 0 |  |  | no | ok |
 | `form-api` | forms |  | 0 |  |  | no | ok |
 | `form-web` | forms |  | 0 |  |  | no | ok |
-| `interview-api` | interview | main | 12 |  |  | no | missing origin |
-| `interview-web` | interview | main | 3 |  |  | no | missing origin |
+| `interview-api` | interview | main | 14 |  |  | no | missing origin |
+| `interview-web` | interview | main | 5 |  |  | no | missing origin |
 | `knowledge-api` | knowledge | main | 0 | 0 | 0 | yes | ok |
 | `knowledge-web` | knowledge | main | 1 | 0 | 0 | yes | dirty |
 | `language-api` | language | main | 23 | 1 | 0 | yes | commits to push |
