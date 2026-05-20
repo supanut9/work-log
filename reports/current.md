@@ -1,6 +1,6 @@
 # Supanut9 Work Log Current Report
 
-Captured: 2026-05-20T14:29:02.743Z
+Captured: 2026-05-20T16:56:00.780Z
 
 Fetch performed: no
 
@@ -10,12 +10,12 @@ Source: scanner
 
 - Configured projects: 23
 - Git projects: 16
-- Clean git projects: 6
-- Dirty projects: 7
+- Clean git projects: 7
+- Dirty projects: 8
 - Projects with commits left to push: 3
 - Behind origin: 0
 - Divergent: 0
-- Missing origin: 3
+- Missing origin: 1
 - Fetch failed: 0
 - Missing paths: 0
 - No task board: 6
@@ -27,14 +27,48 @@ Source: scanner
 | --- | --- | --- | ---: | ---: | ---: | --- | --- |
 | `auth-ui` | auth | main | 15 | 0 | 0 | yes | dirty |
 | `auth-server` | auth | main | 31 | 0 | 0 | yes | dirty |
-| `interview-api` | interview | main | 0 |  |  | no | missing origin |
-| `interview-web` | interview | main | 0 |  |  | no | missing origin |
+| `interview-web` | interview | main | 7 | 0 | 0 | yes | dirty |
 | `knowledge-web` | knowledge | main | 1 | 0 | 0 | yes | dirty |
 | `language-api` | language | main | 23 | 3 | 0 | yes | commits to push |
 | `language-web` | language | main | 53 | 1 | 0 | yes | commits to push |
 | `office-empire-simulator` | office-game | main | 0 |  |  | no | missing origin |
 | `orchestra` | orchestra | main | 1 | 0 | 0 | yes | dirty |
 | `realtime-service` | community | main | 4 | 8 | 0 | yes | commits to push |
+
+
+## Commits Left To Push
+
+| Project | Product | Branch | Dirty | Ahead | Behind | Origin | Status |
+| --- | --- | --- | ---: | ---: | ---: | --- | --- |
+| `language-api` | language | main | 23 | 3 | 0 | yes | commits to push |
+| `language-web` | language | main | 53 | 1 | 0 | yes | commits to push |
+| `realtime-service` | community | main | 4 | 8 | 0 | yes | commits to push |
+
+
+## Dirty Work
+
+| Project | Product | Branch | Dirty | Ahead | Behind | Origin | Status |
+| --- | --- | --- | ---: | ---: | ---: | --- | --- |
+| `auth-ui` | auth | main | 15 | 0 | 0 | yes | dirty |
+| `auth-server` | auth | main | 31 | 0 | 0 | yes | dirty |
+| `interview-web` | interview | main | 7 | 0 | 0 | yes | dirty |
+| `knowledge-web` | knowledge | main | 1 | 0 | 0 | yes | dirty |
+| `language-api` | language | main | 23 | 3 | 0 | yes | commits to push |
+| `language-web` | language | main | 53 | 1 | 0 | yes | commits to push |
+| `orchestra` | orchestra | main | 1 | 0 | 0 | yes | dirty |
+| `realtime-service` | community | main | 4 | 8 | 0 | yes | commits to push |
+
+
+## Broken Or Missing Remotes
+
+| Project | Product | Branch | Dirty | Ahead | Behind | Origin | Status |
+| --- | --- | --- | ---: | ---: | ---: | --- | --- |
+| `office-empire-simulator` | office-game | main | 0 |  |  | no | missing origin |
+
+
+## Behind Or Divergent Repos
+
+_None._
 
 
 ## Project Progress Sources
@@ -70,6 +104,10 @@ Source: scanner
 - trading: `trading-api`, `trading-web`.
 
 
+## Next Plans
+
+Use the task boards and phase docs above as the next-plan source. Projects without a task board or phase docs are counted in the summary and should be configured before relying on progress-health statistics.
+
 ## All Projects
 
 | Project | Product | Branch | Dirty | Ahead | Behind | Origin | Status |
@@ -84,8 +122,8 @@ Source: scanner
 | `form-admin` | forms |  | 0 |  |  | no | ok |
 | `form-api` | forms |  | 0 |  |  | no | ok |
 | `form-web` | forms |  | 0 |  |  | no | ok |
-| `interview-api` | interview | main | 0 |  |  | no | missing origin |
-| `interview-web` | interview | main | 0 |  |  | no | missing origin |
+| `interview-api` | interview | main | 0 | 0 | 0 | yes | ok |
+| `interview-web` | interview | main | 7 | 0 | 0 | yes | dirty |
 | `knowledge-api` | knowledge | main | 0 | 0 | 0 | yes | ok |
 | `knowledge-web` | knowledge | main | 1 | 0 | 0 | yes | dirty |
 | `language-api` | language | main | 23 | 3 | 0 | yes | commits to push |

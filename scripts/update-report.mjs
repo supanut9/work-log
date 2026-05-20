@@ -287,6 +287,10 @@ const reportRows = writeDb ? readLatestSnapshotsFromDb() : scannedProjects;
 const stats = buildStats(reportRows, writeDb ? "postgres" : "scanner");
 const enriched = stats.projects;
 const needingAttention = enriched.filter((project) => project.attention);
+const commitsLeftToPush = enriched.filter((project) => project.ahead > 0 && !(project.behind > 0));
+const dirtyWork = enriched.filter((project) => project.dirty_files > 0);
+const brokenOrMissingRemotes = enriched.filter((project) => project.fetch_status === "missing_origin" || project.fetch_status.startsWith("failed:"));
+const behindOrDivergent = enriched.filter((project) => project.behind > 0);
 
 const report = `# Supanut9 Work Log Current Report
 
@@ -315,9 +319,29 @@ Source: ${stats.source}
 
 ${table(needingAttention)}
 
+## Commits Left To Push
+
+${table(commitsLeftToPush)}
+
+## Dirty Work
+
+${table(dirtyWork)}
+
+## Broken Or Missing Remotes
+
+${table(brokenOrMissingRemotes)}
+
+## Behind Or Divergent Repos
+
+${table(behindOrDivergent)}
+
 ## Project Progress Sources
 
 ${groupedNextPlans(enriched)}
+
+## Next Plans
+
+Use the task boards and phase docs above as the next-plan source. Projects without a task board or phase docs are counted in the summary and should be configured before relying on progress-health statistics.
 
 ## All Projects
 
