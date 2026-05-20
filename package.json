@@ -11,8 +11,9 @@
     "report:db:fetch": "node scripts/update-report.mjs --db --fetch",
     "db:up": "docker compose up -d",
     "db:down": "docker compose down",
-    "db:migrate": "node scripts/db-psql.mjs db/migrations/001_phase1_schema.sql",
-    "db:seed": "node scripts/db-psql.mjs db/seed.sql"
+    "db:migrate": "node scripts/db-migrate.mjs",
+    "db:seed": "node scripts/db-psql.mjs db/seed.sql",
+    "db:summary": "node scripts/db-summary.mjs"
   },
   "engines": {
     "node": ">=22"

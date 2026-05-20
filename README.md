@@ -19,6 +19,7 @@ npm run db:up
 npm run db:migrate
 npm run db:seed
 npm run report:db
+npm run db:summary
 ```
 
 Use `npm run report` for a file-only refresh. Use `npm run report:db` when the local Postgres container is running and snapshots should be stored in `repo_snapshots`.

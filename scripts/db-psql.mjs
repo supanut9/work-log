@@ -19,6 +19,22 @@ export function runSql(sql) {
   );
 }
 
+export function queryJson(sql) {
+  const output = execFileSync(
+    "docker",
+    ["compose", "exec", "-T", "postgres", "psql", "-U", "work_log", "-d", "work_log", "-t", "-A", "-v", "ON_ERROR_STOP=1"],
+    {
+      cwd: repoRoot,
+      input: sql,
+      encoding: "utf8",
+      stdio: ["pipe", "pipe", "pipe"],
+    },
+  ).trim();
+
+  if (!output) return null;
+  return JSON.parse(output);
+}
+
 if (import.meta.url === `file://${process.argv[1]}`) {
   const relativeFile = process.argv[2];
   if (!relativeFile) {

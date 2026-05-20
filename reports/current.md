@@ -1,8 +1,10 @@
 # Supanut9 Work Log Current Report
 
-Captured: 2026-05-20T03:55:16.055Z
+Captured: 2026-05-20T04:08:06.298+00:00
 
 Fetch performed: no
+
+Source: postgres
 
 ## Summary
 
@@ -16,13 +18,15 @@ Fetch performed: no
 - Missing origin: 3
 - Fetch failed: 0
 - Missing paths: 0
+- No task board: 6
+- No phase docs: 5
 
 ## Repos Needing Attention
 
 | Project | Product | Branch | Dirty | Ahead | Behind | Origin | Status |
 | --- | --- | --- | ---: | ---: | ---: | --- | --- |
-| `auth-ui` | auth | main | 15 | 0 | 0 | yes | dirty |
 | `auth-server` | auth | main | 31 | 0 | 0 | yes | dirty |
+| `auth-ui` | auth | main | 15 | 0 | 0 | yes | dirty |
 | `interview-api` | interview | main | 0 |  |  | no | missing origin |
 | `interview-web` | interview | main | 0 |  |  | no | missing origin |
 | `knowledge-web` | knowledge | main | 1 | 0 | 0 | yes | dirty |
@@ -36,7 +40,7 @@ Fetch performed: no
 ## Project Progress Sources
 
 - ai-engineering: `ai-engineering-system`.
-- auth: `auth-ui`, `auth-server`.
+- auth: `auth-server`, `auth-ui`.
   Task board: ../docs/auth/phase-1-task-board.md.
   Phase docs: ../docs/auth/phase-2-plan.md, ../docs/auth/phase-2-ui-upgrade-plan.md.
 - cms: `cms-admin`, `cms-api`.
@@ -70,9 +74,9 @@ Fetch performed: no
 
 | Project | Product | Branch | Dirty | Ahead | Behind | Origin | Status |
 | --- | --- | --- | ---: | ---: | ---: | --- | --- |
-| `auth-ui` | auth | main | 15 | 0 | 0 | yes | dirty |
-| `auth-server` | auth | main | 31 | 0 | 0 | yes | dirty |
 | `ai-engineering-system` | ai-engineering | main | 0 | 0 | 0 | yes | ok |
+| `auth-server` | auth | main | 31 | 0 | 0 | yes | dirty |
+| `auth-ui` | auth | main | 15 | 0 | 0 | yes | dirty |
 | `cms-admin` | cms |  | 0 |  |  | no | ok |
 | `cms-api` | cms |  | 0 |  |  | no | ok |
 | `community-api` | community | main | 0 | 0 | 0 | yes | ok |
