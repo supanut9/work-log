@@ -1,6 +1,6 @@
 # Supanut9 Work Log Current Report
 
-Captured: 2026-05-19T14:30:28.284Z
+Captured: 2026-05-20T03:55:16.055Z
 
 Fetch performed: no
 
@@ -9,7 +9,7 @@ Fetch performed: no
 - Configured projects: 23
 - Git projects: 16
 - Clean git projects: 6
-- Dirty projects: 10
+- Dirty projects: 8
 - Projects with commits left to push: 3
 - Behind origin: 0
 - Divergent: 0
@@ -23,10 +23,10 @@ Fetch performed: no
 | --- | --- | --- | ---: | ---: | ---: | --- | --- |
 | `auth-ui` | auth | main | 15 | 0 | 0 | yes | dirty |
 | `auth-server` | auth | main | 31 | 0 | 0 | yes | dirty |
-| `interview-api` | interview | main | 14 |  |  | no | missing origin |
-| `interview-web` | interview | main | 5 |  |  | no | missing origin |
+| `interview-api` | interview | main | 0 |  |  | no | missing origin |
+| `interview-web` | interview | main | 0 |  |  | no | missing origin |
 | `knowledge-web` | knowledge | main | 1 | 0 | 0 | yes | dirty |
-| `language-api` | language | main | 23 | 1 | 0 | yes | commits to push |
+| `language-api` | language | main | 185 | 1 | 0 | yes | commits to push |
 | `language-web` | language | main | 53 | 1 | 0 | yes | commits to push |
 | `office-empire-simulator` | office-game | main | 15 |  |  | no | missing origin |
 | `orchestra` | orchestra | main | 1 | 0 | 0 | yes | dirty |
@@ -80,11 +80,11 @@ Fetch performed: no
 | `form-admin` | forms |  | 0 |  |  | no | ok |
 | `form-api` | forms |  | 0 |  |  | no | ok |
 | `form-web` | forms |  | 0 |  |  | no | ok |
-| `interview-api` | interview | main | 14 |  |  | no | missing origin |
-| `interview-web` | interview | main | 5 |  |  | no | missing origin |
+| `interview-api` | interview | main | 0 |  |  | no | missing origin |
+| `interview-web` | interview | main | 0 |  |  | no | missing origin |
 | `knowledge-api` | knowledge | main | 0 | 0 | 0 | yes | ok |
 | `knowledge-web` | knowledge | main | 1 | 0 | 0 | yes | dirty |
-| `language-api` | language | main | 23 | 1 | 0 | yes | commits to push |
+| `language-api` | language | main | 185 | 1 | 0 | yes | commits to push |
 | `language-web` | language | main | 53 | 1 | 0 | yes | commits to push |
 | `office-empire-simulator` | office-game | main | 15 |  |  | no | missing origin |
 | `orchestra` | orchestra | main | 1 | 0 | 0 | yes | dirty |

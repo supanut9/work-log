@@ -18,7 +18,10 @@ cp .env.example .env
 npm run db:up
 npm run db:migrate
 npm run db:seed
+npm run report:db
 ```
+
+Use `npm run report` for a file-only refresh. Use `npm run report:db` when the local Postgres container is running and snapshots should be stored in `repo_snapshots`.
 
 ## Rules
 
@@ -28,3 +31,9 @@ npm run db:seed
 - Keep generated human reports in `reports/` and machine stats in `stats/`.
 - Use PostgreSQL as the query source once the runtime DB is started.
 
+## Useful Queries
+
+```sh
+docker compose exec -T postgres psql -U work_log -d work_log -c "select count(*) from repo_snapshots;"
+docker compose exec -T postgres psql -U work_log -d work_log -c "select project_id, dirty_files, ahead, behind, fetch_status from repo_snapshots order by captured_at desc;"
+```

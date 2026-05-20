@@ -7,13 +7,14 @@
     "scan:fetch": "node scripts/scan-repos.mjs --fetch",
     "report": "node scripts/update-report.mjs",
     "report:fetch": "node scripts/update-report.mjs --fetch",
+    "report:db": "node scripts/update-report.mjs --db",
+    "report:db:fetch": "node scripts/update-report.mjs --db --fetch",
     "db:up": "docker compose up -d",
     "db:down": "docker compose down",
-    "db:migrate": "psql \"$DATABASE_URL\" -f db/migrations/001_phase1_schema.sql",
-    "db:seed": "psql \"$DATABASE_URL\" -f db/seed.sql"
+    "db:migrate": "node scripts/db-psql.mjs db/migrations/001_phase1_schema.sql",
+    "db:seed": "node scripts/db-psql.mjs db/seed.sql"
   },
   "engines": {
     "node": ">=22"
   }
 }
-

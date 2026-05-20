@@ -1,11 +1,14 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { randomUUID } from "node:crypto";
 import { collect } from "./scan-repos.mjs";
+import { runSql } from "./db-psql.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(__dirname, "..");
 const fetch = process.argv.includes("--fetch");
+const writeDb = process.argv.includes("--db");
 const capturedAt = new Date().toISOString();
 const projects = collect({ fetch });
 
@@ -32,6 +35,7 @@ const needingAttention = enriched.filter((project) => project.attention);
 const stats = {
   captured_at: capturedAt,
   fetch_performed: fetch,
+  db_write_performed: writeDb,
   totals: {
     configured_projects: enriched.length,
     git_projects: gitProjects.length,
@@ -46,6 +50,91 @@ const stats = {
   },
   projects: enriched,
 };
+
+function sqlString(value) {
+  if (value === null || value === undefined) return "null";
+  return `'${String(value).replaceAll("'", "''")}'`;
+}
+
+function sqlBoolean(value) {
+  return value ? "true" : "false";
+}
+
+function sqlNumber(value) {
+  return Number.isFinite(value) ? String(value) : "null";
+}
+
+function writeSnapshotsToDb(rows) {
+  const statements = [];
+
+  for (const project of rows) {
+    statements.push(`insert into projects (
+  id,
+  path,
+  name,
+  enabled,
+  repo_kind,
+  product,
+  branch_policy,
+  push_policy,
+  milestone_tag_policy
+) values (
+  ${sqlString(project.id)},
+  ${sqlString(project.path)},
+  ${sqlString(project.name)},
+  ${sqlBoolean(project.enabled !== false)},
+  ${sqlString(project.repo_kind)},
+  ${sqlString(project.product)},
+  ${sqlString(project.branch_policy)},
+  ${sqlString(project.push_policy)},
+  ${sqlString(project.milestone_git_tags)}
+) on conflict (id) do update set
+  path = excluded.path,
+  name = excluded.name,
+  enabled = excluded.enabled,
+  repo_kind = excluded.repo_kind,
+  product = excluded.product,
+  branch_policy = excluded.branch_policy,
+  push_policy = excluded.push_policy,
+  milestone_tag_policy = excluded.milestone_tag_policy,
+  updated_at = now();`);
+
+    statements.push(`delete from project_tags where project_id = ${sqlString(project.id)};`);
+    for (const tag of project.tags || []) {
+      statements.push(`insert into project_tags (project_id, tag) values (${sqlString(project.id)}, ${sqlString(tag)}) on conflict do nothing;`);
+    }
+
+    statements.push(`insert into repo_snapshots (
+  id,
+  project_id,
+  captured_at,
+  branch,
+  dirty_files,
+  ahead,
+  behind,
+  has_origin,
+  fetch_status,
+  last_commit_hash,
+  last_commit_subject,
+  remote_url
+) values (
+  ${sqlString(randomUUID())},
+  ${sqlString(project.id)},
+  ${sqlString(capturedAt)},
+  ${sqlString(project.branch)},
+  ${sqlNumber(project.dirty_files)},
+  ${sqlNumber(project.ahead)},
+  ${sqlNumber(project.behind)},
+  ${sqlBoolean(project.has_origin)},
+  ${sqlString(project.fetch_status)},
+  ${sqlString(project.last_commit_hash)},
+  ${sqlString(project.last_commit_subject)},
+  ${sqlString(project.remote_url)}
+);`);
+  }
+
+  runSql(["begin;", ...statements, "commit;"].join("\n"));
+}
 
 function table(rows) {
   if (rows.length === 0) return "_None._\n";
@@ -117,5 +206,8 @@ mkdirSync(path.join(repoRoot, "stats"), { recursive: true });
 writeFileSync(path.join(repoRoot, "stats", "current.json"), `${JSON.stringify(stats, null, 2)}\n`);
 writeFileSync(path.join(repoRoot, "reports", "current.md"), report);
 
-process.stdout.write(`Wrote reports/current.md and stats/current.json for ${enriched.length} projects.\n`);
+if (writeDb) {
+  writeSnapshotsToDb(enriched);
+}
 
+process.stdout.write(`Wrote reports/current.md and stats/current.json for ${enriched.length} projects${writeDb ? " and stored DB snapshots" : ""}.\n`);
