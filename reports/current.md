@@ -1,6 +1,6 @@
 # Supanut9 Work Log Current Report
 
-Captured: 2026-05-20T14:09:55.983Z
+Captured: 2026-05-20T14:29:02.743Z
 
 Fetch performed: no
 
@@ -11,7 +11,7 @@ Source: scanner
 - Configured projects: 23
 - Git projects: 16
 - Clean git projects: 6
-- Dirty projects: 9
+- Dirty projects: 7
 - Projects with commits left to push: 3
 - Behind origin: 0
 - Divergent: 0
@@ -27,8 +27,8 @@ Source: scanner
 | --- | --- | --- | ---: | ---: | ---: | --- | --- |
 | `auth-ui` | auth | main | 15 | 0 | 0 | yes | dirty |
 | `auth-server` | auth | main | 31 | 0 | 0 | yes | dirty |
-| `interview-api` | interview | main | 2 |  |  | no | missing origin |
-| `interview-web` | interview | main | 6 |  |  | no | missing origin |
+| `interview-api` | interview | main | 0 |  |  | no | missing origin |
+| `interview-web` | interview | main | 0 |  |  | no | missing origin |
 | `knowledge-web` | knowledge | main | 1 | 0 | 0 | yes | dirty |
 | `language-api` | language | main | 23 | 3 | 0 | yes | commits to push |
 | `language-web` | language | main | 53 | 1 | 0 | yes | commits to push |
@@ -84,8 +84,8 @@ Source: scanner
 | `form-admin` | forms |  | 0 |  |  | no | ok |
 | `form-api` | forms |  | 0 |  |  | no | ok |
 | `form-web` | forms |  | 0 |  |  | no | ok |
-| `interview-api` | interview | main | 2 |  |  | no | missing origin |
-| `interview-web` | interview | main | 6 |  |  | no | missing origin |
+| `interview-api` | interview | main | 0 |  |  | no | missing origin |
+| `interview-web` | interview | main | 0 |  |  | no | missing origin |
 | `knowledge-api` | knowledge | main | 0 | 0 | 0 | yes | ok |
 | `knowledge-web` | knowledge | main | 1 | 0 | 0 | yes | dirty |
 | `language-api` | language | main | 23 | 3 | 0 | yes | commits to push |
