@@ -1,6 +1,6 @@
 # Supanut9 Work Log Current Report
 
-Captured: 2026-05-21T11:56:59.485+00:00
+Captured: 2026-05-21T12:04:08.638+00:00
 
 Fetch performed: no
 
@@ -10,9 +10,9 @@ Source: postgres
 
 - Configured projects: 24
 - Git projects: 17
-- Clean git projects: 8
+- Clean git projects: 10
 - Dirty projects: 6
-- Projects with commits left to push: 3
+- Projects with commits left to push: 1
 - Behind origin: 0
 - Divergent: 0
 - Missing origin: 1
@@ -29,8 +29,6 @@ Source: postgres
 | `auth-ui` | auth | main | 15 | 0 | 0 | yes | dirty |
 | `interview-web` | interview | main | 94 | 0 | 0 | yes | dirty |
 | `knowledge-web` | knowledge | main | 1 | 0 | 0 | yes | dirty |
-| `language-api` | language | main | 0 | 6 | 0 | yes | commits to push |
-| `language-web` | language | main | 0 | 2 | 0 | yes | commits to push |
 | `office-empire-simulator` | office-game | main | 0 |  |  | no | missing origin |
 | `orchestra` | orchestra | main | 1 | 0 | 0 | yes | dirty |
 | `realtime-service` | community | main | 4 | 8 | 0 | yes | commits to push |
@@ -40,8 +38,6 @@ Source: postgres
 
 | Project | Product | Branch | Dirty | Ahead | Behind | Origin | Status |
 | --- | --- | --- | ---: | ---: | ---: | --- | --- |
-| `language-api` | language | main | 0 | 6 | 0 | yes | commits to push |
-| `language-web` | language | main | 0 | 2 | 0 | yes | commits to push |
 | `realtime-service` | community | main | 4 | 8 | 0 | yes | commits to push |
 
 
@@ -126,8 +122,8 @@ Use the task boards and phase docs above as the next-plan source. Projects witho
 | `interview-web` | interview | main | 94 | 0 | 0 | yes | dirty |
 | `knowledge-api` | knowledge | main | 0 | 0 | 0 | yes | ok |
 | `knowledge-web` | knowledge | main | 1 | 0 | 0 | yes | dirty |
-| `language-api` | language | main | 0 | 6 | 0 | yes | commits to push |
-| `language-web` | language | main | 0 | 2 | 0 | yes | commits to push |
+| `language-api` | language | main | 0 | 0 | 0 | yes | ok |
+| `language-web` | language | main | 0 | 0 | 0 | yes | ok |
 | `office-empire-simulator` | office-game | main | 0 |  |  | no | missing origin |
 | `orchestra` | orchestra | main | 1 | 0 | 0 | yes | dirty |
 | `portal-api` | portal | main | 0 | 0 | 0 | yes | ok |
