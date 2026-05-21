@@ -1,6 +1,6 @@
 # Supanut9 Work Log Current Report
 
-Captured: 2026-05-20T16:56:00.780Z
+Captured: 2026-05-21T08:09:22.746Z
 
 Fetch performed: no
 
@@ -11,7 +11,7 @@ Source: scanner
 - Configured projects: 23
 - Git projects: 16
 - Clean git projects: 7
-- Dirty projects: 8
+- Dirty projects: 6
 - Projects with commits left to push: 3
 - Behind origin: 0
 - Divergent: 0
@@ -27,10 +27,10 @@ Source: scanner
 | --- | --- | --- | ---: | ---: | ---: | --- | --- |
 | `auth-ui` | auth | main | 15 | 0 | 0 | yes | dirty |
 | `auth-server` | auth | main | 31 | 0 | 0 | yes | dirty |
-| `interview-web` | interview | main | 7 | 0 | 0 | yes | dirty |
+| `interview-web` | interview | main | 94 | 0 | 0 | yes | dirty |
 | `knowledge-web` | knowledge | main | 1 | 0 | 0 | yes | dirty |
-| `language-api` | language | main | 23 | 3 | 0 | yes | commits to push |
-| `language-web` | language | main | 53 | 1 | 0 | yes | commits to push |
+| `language-api` | language | main | 0 | 6 | 0 | yes | commits to push |
+| `language-web` | language | main | 0 | 2 | 0 | yes | commits to push |
 | `office-empire-simulator` | office-game | main | 0 |  |  | no | missing origin |
 | `orchestra` | orchestra | main | 1 | 0 | 0 | yes | dirty |
 | `realtime-service` | community | main | 4 | 8 | 0 | yes | commits to push |
@@ -40,8 +40,8 @@ Source: scanner
 
 | Project | Product | Branch | Dirty | Ahead | Behind | Origin | Status |
 | --- | --- | --- | ---: | ---: | ---: | --- | --- |
-| `language-api` | language | main | 23 | 3 | 0 | yes | commits to push |
-| `language-web` | language | main | 53 | 1 | 0 | yes | commits to push |
+| `language-api` | language | main | 0 | 6 | 0 | yes | commits to push |
+| `language-web` | language | main | 0 | 2 | 0 | yes | commits to push |
 | `realtime-service` | community | main | 4 | 8 | 0 | yes | commits to push |
 
 
@@ -51,10 +51,8 @@ Source: scanner
 | --- | --- | --- | ---: | ---: | ---: | --- | --- |
 | `auth-ui` | auth | main | 15 | 0 | 0 | yes | dirty |
 | `auth-server` | auth | main | 31 | 0 | 0 | yes | dirty |
-| `interview-web` | interview | main | 7 | 0 | 0 | yes | dirty |
+| `interview-web` | interview | main | 94 | 0 | 0 | yes | dirty |
 | `knowledge-web` | knowledge | main | 1 | 0 | 0 | yes | dirty |
-| `language-api` | language | main | 23 | 3 | 0 | yes | commits to push |
-| `language-web` | language | main | 53 | 1 | 0 | yes | commits to push |
 | `orchestra` | orchestra | main | 1 | 0 | 0 | yes | dirty |
 | `realtime-service` | community | main | 4 | 8 | 0 | yes | commits to push |
 
@@ -123,11 +121,11 @@ Use the task boards and phase docs above as the next-plan source. Projects witho
 | `form-api` | forms |  | 0 |  |  | no | ok |
 | `form-web` | forms |  | 0 |  |  | no | ok |
 | `interview-api` | interview | main | 0 | 0 | 0 | yes | ok |
-| `interview-web` | interview | main | 7 | 0 | 0 | yes | dirty |
+| `interview-web` | interview | main | 94 | 0 | 0 | yes | dirty |
 | `knowledge-api` | knowledge | main | 0 | 0 | 0 | yes | ok |
 | `knowledge-web` | knowledge | main | 1 | 0 | 0 | yes | dirty |
-| `language-api` | language | main | 23 | 3 | 0 | yes | commits to push |
-| `language-web` | language | main | 53 | 1 | 0 | yes | commits to push |
+| `language-api` | language | main | 0 | 6 | 0 | yes | commits to push |
+| `language-web` | language | main | 0 | 2 | 0 | yes | commits to push |
 | `office-empire-simulator` | office-game | main | 0 |  |  | no | missing origin |
 | `orchestra` | orchestra | main | 1 | 0 | 0 | yes | dirty |
 | `portal-api` | portal | main | 0 | 0 | 0 | yes | ok |
