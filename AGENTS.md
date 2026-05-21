@@ -14,13 +14,13 @@ This repo is the durable work-log tracker for `/Users/supanut.tan/projects/supan
 1. Read `config/projects.yml`.
 2. Run `npm run report` before broad coordination work.
 3. Check `reports/current.md` and `stats/current.json`.
-4. After meaningful work in a tracked project, update the daily log with `npm run log:add`.
+4. After meaningful work in a tracked project, update the daily log with `npm run closeout` or `npm run log:add`.
 5. If tracked repo status changed, refresh reports with `npm run report` or `npm run report:db`.
 6. Commit this repo with tracker-action scopes.
 
 ## When To Add A Log Entry
 
-Add a log entry with `npm run log:add` whenever an enabled project has meaningful work, especially after:
+Add a log entry with `npm run closeout` whenever an enabled project has meaningful repo work, especially after:
 
 - a product repo commit is created
 - a push succeeds or is intentionally deferred
@@ -31,7 +31,7 @@ Add a log entry with `npm run log:add` whenever an enabled project has meaningfu
 
 Do not log every tiny file edit. Log stable work boundaries that another agent would need in order to continue safely.
 
-Use manual log edits only for repairing older entries or reshaping history. For normal work closeout, use the CLI so project ids are validated and DB storage can be kept in sync.
+Use `npm run log:add` for manual entries where repo state should not be inferred, such as planning-only notes or cross-repo summaries. Use manual log edits only for repairing older entries or reshaping history. For normal work closeout, use the CLI so project ids are validated and DB storage can be kept in sync.
 
 ## Daily Log Format
 
@@ -64,13 +64,21 @@ Each daily file must be newest-first and include a table of contents:
 - Blockers: none
 ```
 
-Preferred command:
+Preferred closeout command:
+
+```sh
+npm run closeout -- --project language-api --verification "go test ./..." --next-plan "continue LANG-101" --db
+```
+
+`closeout` detects the repo path, branch, latest commit, dirty count, ahead/behind count, origin state, and default tags from `config/projects.yml`.
+
+Manual command:
 
 ```sh
 npm run log:add -- --project language-api --tags backend,course --summary "Committed course readiness work" --verification "go test ./..." --commit "8a66f96 feat: add conversation and course readiness" --push "not pushed" --next-plan "continue LANG-101" --blockers "none" --db
 ```
 
-Omit `--db` only when Postgres is not running. The command creates or updates `logs/daily/YYYY-MM-DD.md`; with `--db`, it also inserts a row into `log_entries`.
+Omit `--db` only when Postgres is not running. The commands create or update `logs/daily/YYYY-MM-DD.md`; with `--db`, they also insert a row into `log_entries`.
 
 For multi-repo work, either create one entry per repo at the same timestamp or use a combined repo value such as `language-api`, `language-web` when the work is intentionally cross-repo.
 

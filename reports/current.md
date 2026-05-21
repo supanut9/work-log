@@ -1,6 +1,6 @@
 # Supanut9 Work Log Current Report
 
-Captured: 2026-05-21T08:30:42.164+00:00
+Captured: 2026-05-21T08:36:58.153+00:00
 
 Fetch performed: no
 
@@ -10,9 +10,9 @@ Source: postgres
 
 - Configured projects: 24
 - Git projects: 17
-- Clean git projects: 7
+- Clean git projects: 8
 - Dirty projects: 6
-- Projects with commits left to push: 4
+- Projects with commits left to push: 3
 - Behind origin: 0
 - Divergent: 0
 - Missing origin: 1
@@ -34,7 +34,6 @@ Source: postgres
 | `office-empire-simulator` | office-game | main | 0 |  |  | no | missing origin |
 | `orchestra` | orchestra | main | 1 | 0 | 0 | yes | dirty |
 | `realtime-service` | community | main | 4 | 8 | 0 | yes | commits to push |
-| `work-log` | tracker | main | 0 | 1 | 0 | yes | commits to push |
 
 
 ## Commits Left To Push
@@ -44,7 +43,6 @@ Source: postgres
 | `language-api` | language | main | 0 | 6 | 0 | yes | commits to push |
 | `language-web` | language | main | 0 | 2 | 0 | yes | commits to push |
 | `realtime-service` | community | main | 4 | 8 | 0 | yes | commits to push |
-| `work-log` | tracker | main | 0 | 1 | 0 | yes | commits to push |
 
 
 ## Dirty Work
@@ -137,5 +135,5 @@ Use the task boards and phase docs above as the next-plan source. Projects witho
 | `realtime-service` | community | main | 4 | 8 | 0 | yes | commits to push |
 | `trading-api` | trading |  | 0 |  |  | no | ok |
 | `trading-web` | trading |  | 0 |  |  | no | ok |
-| `work-log` | tracker | main | 0 | 1 | 0 | yes | commits to push |
+| `work-log` | tracker | main | 0 | 0 | 0 | yes | ok |
 

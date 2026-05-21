@@ -9,7 +9,7 @@ The workspace root stays non-git. This nested repo owns progress logs, repo stat
 ```sh
 npm run scan
 npm run report
-npm run log:add -- --project work-log --tags tracker --summary "Updated tracker" --verification "reviewed files" --commit "pending" --push "pending" --next-plan "continue" --blockers "none"
+npm run closeout -- --project work-log --verification "reviewed files" --next-plan "continue"
 ```
 
 Optional local database:
@@ -21,7 +21,7 @@ npm run db:migrate
 npm run db:seed
 npm run report:db
 npm run db:summary
-npm run log:add -- --project work-log --tags tracker,db --summary "Recorded tracker work" --verification "npm run db:migrate" --commit "pending" --push "pending" --next-plan "commit tracker" --blockers "none" --db
+npm run closeout -- --project work-log --verification "npm run db:migrate" --next-plan "commit tracker" --db
 ```
 
 Use `npm run report` for a file-only refresh. Use `npm run report:db` when the local Postgres container is running and snapshots should be stored in `repo_snapshots`.
@@ -34,15 +34,23 @@ Use `npm run report` for a file-only refresh. Use `npm run report:db` when the l
 - Keep daily human logs in `logs/daily/`, generated human reports in `reports/`, and machine stats in `stats/`.
 - Use PostgreSQL as the query source once the runtime DB is started.
 
-## Daily Logs
+## Closeouts And Daily Logs
 
-Use `npm run log:add` for normal entries:
+Use `npm run closeout` after normal repo work:
+
+```sh
+npm run closeout -- --project language-api --verification "go test ./..." --next-plan "continue LANG-101" --db
+```
+
+`closeout` validates the project id, scans the configured repo, detects latest commit, branch, dirty count, ahead/behind state, origin state, and default tags, then writes the markdown log and optional DB row.
+
+Use `npm run log:add` for manual entries:
 
 ```sh
 npm run log:add -- --project language-api --tags backend,course --summary "Committed course readiness work" --verification "go test ./..." --commit "8a66f96 feat: add conversation and course readiness" --push "not pushed" --next-plan "continue LANG-101" --blockers "none" --db
 ```
 
-Omit `--db` only when Postgres is not running. The command validates the project id against `config/projects.yml`, writes the markdown log, and inserts into `log_entries` when `--db` is present.
+Omit `--db` only when Postgres is not running. Both commands validate the project id against `config/projects.yml`, write the markdown log, and insert into `log_entries` when `--db` is present.
 
 Manual files still use one file per date:
 
