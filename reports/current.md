@@ -1,6 +1,6 @@
 # Supanut9 Work Log Current Report
 
-Captured: 2026-05-21T12:04:08.638+00:00
+Captured: 2026-05-21T12:45:19.151+00:00
 
 Fetch performed: no
 
@@ -11,8 +11,8 @@ Source: postgres
 - Configured projects: 24
 - Git projects: 17
 - Clean git projects: 10
-- Dirty projects: 6
-- Projects with commits left to push: 1
+- Dirty projects: 5
+- Projects with commits left to push: 2
 - Behind origin: 0
 - Divergent: 0
 - Missing origin: 1
@@ -27,7 +27,7 @@ Source: postgres
 | --- | --- | --- | ---: | ---: | ---: | --- | --- |
 | `auth-server` | auth | main | 32 | 0 | 0 | yes | dirty |
 | `auth-ui` | auth | main | 15 | 0 | 0 | yes | dirty |
-| `interview-web` | interview | main | 94 | 0 | 0 | yes | dirty |
+| `interview-web` | interview | main | 0 | 1 | 0 | yes | commits to push |
 | `knowledge-web` | knowledge | main | 1 | 0 | 0 | yes | dirty |
 | `office-empire-simulator` | office-game | main | 0 |  |  | no | missing origin |
 | `orchestra` | orchestra | main | 1 | 0 | 0 | yes | dirty |
@@ -38,6 +38,7 @@ Source: postgres
 
 | Project | Product | Branch | Dirty | Ahead | Behind | Origin | Status |
 | --- | --- | --- | ---: | ---: | ---: | --- | --- |
+| `interview-web` | interview | main | 0 | 1 | 0 | yes | commits to push |
 | `realtime-service` | community | main | 4 | 8 | 0 | yes | commits to push |
 
 
@@ -47,7 +48,6 @@ Source: postgres
 | --- | --- | --- | ---: | ---: | ---: | --- | --- |
 | `auth-server` | auth | main | 32 | 0 | 0 | yes | dirty |
 | `auth-ui` | auth | main | 15 | 0 | 0 | yes | dirty |
-| `interview-web` | interview | main | 94 | 0 | 0 | yes | dirty |
 | `knowledge-web` | knowledge | main | 1 | 0 | 0 | yes | dirty |
 | `orchestra` | orchestra | main | 1 | 0 | 0 | yes | dirty |
 | `realtime-service` | community | main | 4 | 8 | 0 | yes | commits to push |
@@ -119,7 +119,7 @@ Use the task boards and phase docs above as the next-plan source. Projects witho
 | `form-api` | forms |  | 0 |  |  | no | ok |
 | `form-web` | forms |  | 0 |  |  | no | ok |
 | `interview-api` | interview | main | 0 | 0 | 0 | yes | ok |
-| `interview-web` | interview | main | 94 | 0 | 0 | yes | dirty |
+| `interview-web` | interview | main | 0 | 1 | 0 | yes | commits to push |
 | `knowledge-api` | knowledge | main | 0 | 0 | 0 | yes | ok |
 | `knowledge-web` | knowledge | main | 1 | 0 | 0 | yes | dirty |
 | `language-api` | language | main | 0 | 0 | 0 | yes | ok |
