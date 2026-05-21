@@ -1,10 +1,10 @@
 # Supanut9 Work Log Current Report
 
-Captured: 2026-05-21T08:09:22.746Z
+Captured: 2026-05-21T08:10:16.832+00:00
 
 Fetch performed: no
 
-Source: scanner
+Source: postgres
 
 ## Summary
 
@@ -25,8 +25,8 @@ Source: scanner
 
 | Project | Product | Branch | Dirty | Ahead | Behind | Origin | Status |
 | --- | --- | --- | ---: | ---: | ---: | --- | --- |
-| `auth-ui` | auth | main | 15 | 0 | 0 | yes | dirty |
 | `auth-server` | auth | main | 31 | 0 | 0 | yes | dirty |
+| `auth-ui` | auth | main | 15 | 0 | 0 | yes | dirty |
 | `interview-web` | interview | main | 94 | 0 | 0 | yes | dirty |
 | `knowledge-web` | knowledge | main | 1 | 0 | 0 | yes | dirty |
 | `language-api` | language | main | 0 | 6 | 0 | yes | commits to push |
@@ -49,8 +49,8 @@ Source: scanner
 
 | Project | Product | Branch | Dirty | Ahead | Behind | Origin | Status |
 | --- | --- | --- | ---: | ---: | ---: | --- | --- |
-| `auth-ui` | auth | main | 15 | 0 | 0 | yes | dirty |
 | `auth-server` | auth | main | 31 | 0 | 0 | yes | dirty |
+| `auth-ui` | auth | main | 15 | 0 | 0 | yes | dirty |
 | `interview-web` | interview | main | 94 | 0 | 0 | yes | dirty |
 | `knowledge-web` | knowledge | main | 1 | 0 | 0 | yes | dirty |
 | `orchestra` | orchestra | main | 1 | 0 | 0 | yes | dirty |
@@ -72,7 +72,7 @@ _None._
 ## Project Progress Sources
 
 - ai-engineering: `ai-engineering-system`.
-- auth: `auth-ui`, `auth-server`.
+- auth: `auth-server`, `auth-ui`.
   Task board: ../docs/auth/phase-1-task-board.md.
   Phase docs: ../docs/auth/phase-2-plan.md, ../docs/auth/phase-2-ui-upgrade-plan.md.
 - cms: `cms-admin`, `cms-api`.
@@ -110,9 +110,9 @@ Use the task boards and phase docs above as the next-plan source. Projects witho
 
 | Project | Product | Branch | Dirty | Ahead | Behind | Origin | Status |
 | --- | --- | --- | ---: | ---: | ---: | --- | --- |
-| `auth-ui` | auth | main | 15 | 0 | 0 | yes | dirty |
-| `auth-server` | auth | main | 31 | 0 | 0 | yes | dirty |
 | `ai-engineering-system` | ai-engineering | main | 0 | 0 | 0 | yes | ok |
+| `auth-server` | auth | main | 31 | 0 | 0 | yes | dirty |
+| `auth-ui` | auth | main | 15 | 0 | 0 | yes | dirty |
 | `cms-admin` | cms |  | 0 |  |  | no | ok |
 | `cms-api` | cms |  | 0 |  |  | no | ok |
 | `community-api` | community | main | 0 | 0 | 0 | yes | ok |
