@@ -29,8 +29,43 @@ Use `npm run report` for a file-only refresh. Use `npm run report:db` when the l
 - `config/projects.yml` is the allowlist for tracked projects.
 - Do not infer tracking from every folder in the root workspace.
 - Commit tracker changes in this repo, not at the workspace root.
-- Keep generated human reports in `reports/` and machine stats in `stats/`.
+- Keep daily human logs in `logs/daily/`, generated human reports in `reports/`, and machine stats in `stats/`.
 - Use PostgreSQL as the query source once the runtime DB is started.
+
+## Daily Logs
+
+Use one file per date:
+
+```text
+logs/daily/YYYY-MM-DD.md
+```
+
+Each daily file is newest-first and starts with a table of contents:
+
+```md
+# 2026-05-21 Work Log
+
+## Table Of Contents
+
+| Time | Repo | Tags | Summary |
+| --- | --- | --- | --- |
+| 15:10 | `work-log` | `tracker`, `db` | Refreshed DB-backed workspace report |
+
+## 15:10 - work-log
+
+- Repo: `work-log`
+- Tags: `tracker`, `db`
+- Summary: Refreshed DB-backed workspace report.
+- Verification: `npm run report:db`; `npm run db:summary`
+- Commit: `abc1234 docs: refresh db-backed workspace report`
+- Push: pushed to `origin/main`
+- Next plan: use report queues for repo cleanup
+- Blockers: none
+```
+
+Add a daily log entry after meaningful work in an enabled project: commits, pushes, verification runs, task-board or phase-doc updates, and blockers that affect continuation.
+
+After tracked repo status changes, refresh `reports/current.md` and `stats/current.json` with `npm run report` or `npm run report:db`.
 
 ## Useful Queries
 

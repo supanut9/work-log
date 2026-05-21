@@ -14,8 +14,63 @@ This repo is the durable work-log tracker for `/Users/supanut.tan/projects/supan
 1. Read `config/projects.yml`.
 2. Run `npm run report` before broad coordination work.
 3. Check `reports/current.md` and `stats/current.json`.
-4. Update logs/reports after meaningful work in tracked projects.
-5. Commit this repo with tracker-action scopes.
+4. After meaningful work in a tracked project, update the daily log.
+5. If tracked repo status changed, refresh reports with `npm run report` or `npm run report:db`.
+6. Commit this repo with tracker-action scopes.
+
+## When To Add A Log Entry
+
+Add a log entry whenever an enabled project has meaningful work, especially after:
+
+- a product repo commit is created
+- a push succeeds or is intentionally deferred
+- verification is run for a repo slice
+- a task board, phase doc, or closeout doc is updated
+- a blocker, failed hook, failed CI/check, missing remote, or dirty-work decision affects next steps
+- work spans multiple repos and future agents need the cross-repo context
+
+Do not log every tiny file edit. Log stable work boundaries that another agent would need in order to continue safely.
+
+## Daily Log Format
+
+Use one file per date:
+
+```text
+logs/daily/YYYY-MM-DD.md
+```
+
+Each daily file must be newest-first and include a table of contents:
+
+```md
+# YYYY-MM-DD Work Log
+
+## Table Of Contents
+
+| Time | Repo | Tags | Summary |
+| --- | --- | --- | --- |
+| 15:10 | `work-log` | `tracker`, `db` | Refreshed DB-backed workspace report |
+
+## 15:10 - work-log
+
+- Repo: `work-log`
+- Tags: `tracker`, `db`
+- Summary: Refreshed DB-backed workspace report.
+- Verification: `npm run report:db`; `npm run db:summary`
+- Commit: `abc1234 docs: refresh db-backed workspace report`
+- Push: pushed to `origin/main`
+- Next plan: use report queues for repo cleanup
+- Blockers: none
+```
+
+For multi-repo work, either create one entry per repo at the same timestamp or use a combined repo value such as `language-api`, `language-web` when the work is intentionally cross-repo.
+
+## Report Refresh Rule
+
+Run `npm run report` after committing tracked project work that changes dirty/ahead/behind status.
+
+Use `npm run report:db` instead when the local Postgres container is running and DB snapshots should be updated.
+
+Commit the log/report refresh separately from the product repo commit.
 
 ## Commit Format
 
@@ -47,4 +102,3 @@ docs(report): [all] [WORKLOG-001] add initial workspace dashboard
 chore(config): [work-log] [WORKLOG-001] seed tracked project allowlist
 docs(record): [language-api] [LANG-090] record conversation coach work
 ```
-
