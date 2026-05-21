@@ -1,4 +1,22 @@
 projects:
+  - id: work-log
+    name: work-log
+    path: .
+    enabled: true
+    product: tracker
+    repo_kind: nested_git
+    app_kind: tracker
+    tags: [tracker, active]
+    tech: [node, postgres, markdown]
+    task_board: null
+    phase_docs: [README.md]
+    architecture_docs: [AGENTS.md, CLAUDE.md]
+    runbooks: []
+    branch_policy: main_verified_slice
+    push_policy: push_after_verified_slice
+    milestone_git_tags: release_only
+    stats: [git_health, progress_health]
+
   - id: auth-ui
     name: auth-ui
     path: ../auth-ui
@@ -412,4 +430,3 @@ projects:
     push_policy: push_after_verified_slice
     milestone_git_tags: phase_closeout
     stats: [progress_health]
-

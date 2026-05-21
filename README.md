@@ -9,6 +9,7 @@ The workspace root stays non-git. This nested repo owns progress logs, repo stat
 ```sh
 npm run scan
 npm run report
+npm run log:add -- --project work-log --tags tracker --summary "Updated tracker" --verification "reviewed files" --commit "pending" --push "pending" --next-plan "continue" --blockers "none"
 ```
 
 Optional local database:
@@ -20,6 +21,7 @@ npm run db:migrate
 npm run db:seed
 npm run report:db
 npm run db:summary
+npm run log:add -- --project work-log --tags tracker,db --summary "Recorded tracker work" --verification "npm run db:migrate" --commit "pending" --push "pending" --next-plan "commit tracker" --blockers "none" --db
 ```
 
 Use `npm run report` for a file-only refresh. Use `npm run report:db` when the local Postgres container is running and snapshots should be stored in `repo_snapshots`.
@@ -34,7 +36,15 @@ Use `npm run report` for a file-only refresh. Use `npm run report:db` when the l
 
 ## Daily Logs
 
-Use one file per date:
+Use `npm run log:add` for normal entries:
+
+```sh
+npm run log:add -- --project language-api --tags backend,course --summary "Committed course readiness work" --verification "go test ./..." --commit "8a66f96 feat: add conversation and course readiness" --push "not pushed" --next-plan "continue LANG-101" --blockers "none" --db
+```
+
+Omit `--db` only when Postgres is not running. The command validates the project id against `config/projects.yml`, writes the markdown log, and inserts into `log_entries` when `--db` is present.
+
+Manual files still use one file per date:
 
 ```text
 logs/daily/YYYY-MM-DD.md

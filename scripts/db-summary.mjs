@@ -22,7 +22,9 @@ select json_build_object(
   'missing_origin_projects', (select count(*) from latest where fetch_status = 'missing_origin'),
   'fetch_failed_projects', (select count(*) from latest where fetch_status like 'failed:%'),
   'no_task_board_projects', (select count(*) from projects where enabled = true and task_board is null),
-  'no_phase_docs_projects', (select count(*) from projects where enabled = true and jsonb_array_length(phase_docs) = 0)
+  'no_phase_docs_projects', (select count(*) from projects where enabled = true and jsonb_array_length(phase_docs) = 0),
+  'log_entries', (select to_regclass('public.log_entries') is not null)::int * coalesce((select count(*) from log_entries), 0),
+  'latest_log_entry', (select max(logged_at) from log_entries)
 );
 `);
 

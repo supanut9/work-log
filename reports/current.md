@@ -1,6 +1,6 @@
 # Supanut9 Work Log Current Report
 
-Captured: 2026-05-21T08:23:10.948+00:00
+Captured: 2026-05-21T08:30:42.164+00:00
 
 Fetch performed: no
 
@@ -8,17 +8,17 @@ Source: postgres
 
 ## Summary
 
-- Configured projects: 23
-- Git projects: 16
+- Configured projects: 24
+- Git projects: 17
 - Clean git projects: 7
 - Dirty projects: 6
-- Projects with commits left to push: 3
+- Projects with commits left to push: 4
 - Behind origin: 0
 - Divergent: 0
 - Missing origin: 1
 - Fetch failed: 0
 - Missing paths: 0
-- No task board: 6
+- No task board: 7
 - No phase docs: 5
 
 ## Repos Needing Attention
@@ -34,6 +34,7 @@ Source: postgres
 | `office-empire-simulator` | office-game | main | 0 |  |  | no | missing origin |
 | `orchestra` | orchestra | main | 1 | 0 | 0 | yes | dirty |
 | `realtime-service` | community | main | 4 | 8 | 0 | yes | commits to push |
+| `work-log` | tracker | main | 0 | 1 | 0 | yes | commits to push |
 
 
 ## Commits Left To Push
@@ -43,6 +44,7 @@ Source: postgres
 | `language-api` | language | main | 0 | 6 | 0 | yes | commits to push |
 | `language-web` | language | main | 0 | 2 | 0 | yes | commits to push |
 | `realtime-service` | community | main | 4 | 8 | 0 | yes | commits to push |
+| `work-log` | tracker | main | 0 | 1 | 0 | yes | commits to push |
 
 
 ## Dirty Work
@@ -99,6 +101,8 @@ _None._
 - orchestra: `orchestra`.
   Phase docs: ../orchestra/ROADMAP.md.
 - portal: `portal-api`, `portal-web`.
+- tracker: `work-log`.
+  Phase docs: README.md.
 - trading: `trading-api`, `trading-web`.
 
 
@@ -133,4 +137,5 @@ Use the task boards and phase docs above as the next-plan source. Projects witho
 | `realtime-service` | community | main | 4 | 8 | 0 | yes | commits to push |
 | `trading-api` | trading |  | 0 |  |  | no | ok |
 | `trading-web` | trading |  | 0 |  |  | no | ok |
+| `work-log` | tracker | main | 0 | 1 | 0 | yes | commits to push |
 
