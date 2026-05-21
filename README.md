@@ -9,6 +9,7 @@ The workspace root stays non-git. This nested repo owns progress logs, repo stat
 ```sh
 npm run scan
 npm run report
+npm run queue
 npm run closeout -- --project work-log --verification "reviewed files" --next-plan "continue"
 ```
 
@@ -21,6 +22,7 @@ npm run db:migrate
 npm run db:seed
 npm run report:db
 npm run db:summary
+npm run queue
 npm run closeout -- --project work-log --verification "npm run db:migrate" --next-plan "commit tracker" --db
 ```
 
@@ -84,6 +86,23 @@ Each daily file is newest-first and starts with a table of contents:
 Add a daily log entry after meaningful work in an enabled project: commits, pushes, verification runs, task-board or phase-doc updates, and blockers that affect continuation.
 
 After tracked repo status changes, refresh `reports/current.md` and `stats/current.json` with `npm run report` or `npm run report:db`.
+
+## Queue
+
+Use the queue after report refreshes:
+
+```sh
+npm run queue
+npm run queue -- --stale-days 7
+```
+
+The queue reads `stats/current.json` and prints:
+
+- repos needing attention
+- clean repos ready to push
+- tracking gaps
+- stale logs from `log_entries`
+- today's log entries
 
 ## Useful Queries
 

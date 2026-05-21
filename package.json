@@ -11,6 +11,7 @@
     "report:db:fetch": "node scripts/update-report.mjs --db --fetch",
     "log:add": "node scripts/add-log-entry.mjs",
     "closeout": "node scripts/closeout.mjs",
+    "queue": "node scripts/queue.mjs",
     "db:up": "docker compose up -d",
     "db:down": "docker compose down",
     "db:migrate": "node scripts/db-migrate.mjs",

@@ -15,8 +15,9 @@ This repo is the durable work-log tracker for `/Users/supanut.tan/projects/supan
 2. Run `npm run report` before broad coordination work.
 3. Check `reports/current.md` and `stats/current.json`.
 4. After meaningful work in a tracked project, update the daily log with `npm run closeout` or `npm run log:add`.
-5. If tracked repo status changed, refresh reports with `npm run report` or `npm run report:db`.
-6. Commit this repo with tracker-action scopes.
+5. Run `npm run queue` to pick the next repo action from current stats.
+6. If tracked repo status changed, refresh reports with `npm run report` or `npm run report:db`.
+7. Commit this repo with tracker-action scopes.
 
 ## When To Add A Log Entry
 
@@ -89,6 +90,17 @@ Run `npm run report` after committing tracked project work that changes dirty/ah
 Use `npm run report:db` instead when the local Postgres container is running and DB snapshots should be updated.
 
 Commit the log/report refresh separately from the product repo commit.
+
+## Queue Rule
+
+Use `npm run queue` after reports are refreshed. The queue reads `stats/current.json`, then uses Postgres when available for today and stale-log sections.
+
+```sh
+npm run queue
+npm run queue -- --stale-days 7
+```
+
+Treat the queue as the next-action index: fix risky dirty/divergent work first, push clean ahead repos next, then fill tracking gaps.
 
 ## Commit Format
 

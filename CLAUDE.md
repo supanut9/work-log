@@ -12,4 +12,5 @@ This is the tracker repo for the Supanut9 workspace. Follow `AGENTS.md` first.
 - Daily logs must be newest-first and start with a table of contents listing time, repo, tags, and summary.
 - Add a log entry after product commits, pushes, verification runs, task-board/phase-doc updates, or blockers that affect continuation.
 - Use `--db` with `npm run closeout` or `npm run log:add` when local Postgres is running so `log_entries` stays queryable.
+- Use `npm run queue` after report refreshes to choose the next tracked repo action.
 - If tracked repo status changed, run `npm run report` or `npm run report:db` and commit the tracker update separately.
