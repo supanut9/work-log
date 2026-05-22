@@ -1,14 +1,14 @@
 {
-  "captured_at": "2026-05-22T15:44:46.171Z",
+  "captured_at": "2026-05-22T16:01:33.993Z",
   "fetch_performed": false,
   "db_write_performed": false,
   "source": "scanner",
   "totals": {
     "configured_projects": 24,
     "git_projects": 17,
-    "clean_git_projects": 8,
-    "dirty_projects": 6,
-    "commits_left_to_push_projects": 4,
+    "clean_git_projects": 12,
+    "dirty_projects": 4,
+    "commits_left_to_push_projects": 1,
     "behind_projects": 0,
     "divergent_projects": 0,
     "missing_origin_projects": 1,
@@ -56,14 +56,14 @@
       "is_git_repo": true,
       "branch": "main",
       "dirty_files": 1,
-      "ahead": 6,
+      "ahead": 0,
       "behind": 0,
       "has_origin": true,
       "fetch_status": "not_fetched",
-      "last_commit_hash": "67a1a2d",
-      "last_commit_subject": "docs(tracker-action): [interview-web] [INT-198] log Vercel alias",
+      "last_commit_hash": "90740c6",
+      "last_commit_subject": "docs(tracker-action): [interview-api] [INT-197] log Vercel API deploy",
       "remote_url": "https://github.com/supanut9/work-log.git",
-      "attention": "commits to push"
+      "attention": "dirty"
     },
     {
       "id": "auth-ui",
@@ -104,15 +104,15 @@
       "exists": true,
       "is_git_repo": true,
       "branch": "main",
-      "dirty_files": 15,
+      "dirty_files": 0,
       "ahead": 0,
       "behind": 0,
       "has_origin": true,
       "fetch_status": "not_fetched",
-      "last_commit_hash": "77450c2",
-      "last_commit_subject": "fix(security): [AUTH-000] use valid trivy setup action",
+      "last_commit_hash": "5a60793",
+      "last_commit_subject": "feat(login): [AUTH-013] refresh hosted auth UI",
       "remote_url": "git@github.com-supanut9:supanut9/auth-ui.git",
-      "attention": "dirty"
+      "attention": ""
     },
     {
       "id": "auth-server",
@@ -153,15 +153,15 @@
       "exists": true,
       "is_git_repo": true,
       "branch": "main",
-      "dirty_files": 32,
+      "dirty_files": 0,
       "ahead": 0,
       "behind": 0,
       "has_origin": true,
       "fetch_status": "not_fetched",
-      "last_commit_hash": "24dbb80",
-      "last_commit_subject": "fix(security): [AUTH-000] use valid trivy setup action",
+      "last_commit_hash": "79931c1",
+      "last_commit_subject": "feat(flow): [AUTH-013] add stateless auth flow",
       "remote_url": "git@github.com-supanut9:supanut9/auth-server.git",
-      "attention": "dirty"
+      "attention": ""
     },
     {
       "id": "ai-engineering-system",
@@ -580,14 +580,14 @@
       "is_git_repo": true,
       "branch": "main",
       "dirty_files": 0,
-      "ahead": 4,
+      "ahead": 0,
       "behind": 0,
       "has_origin": true,
       "fetch_status": "not_fetched",
-      "last_commit_hash": "7edb105",
+      "last_commit_hash": "b1f4270",
       "last_commit_subject": "feat(deploy): [INT-197] deploy API on Vercel Neon",
       "remote_url": "https://github.com/supanut9/interview-api.git",
-      "attention": "commits to push"
+      "attention": ""
     },
     {
       "id": "interview-web",
@@ -628,14 +628,14 @@
       "is_git_repo": true,
       "branch": "main",
       "dirty_files": 0,
-      "ahead": 12,
+      "ahead": 0,
       "behind": 0,
       "has_origin": true,
       "fetch_status": "not_fetched",
-      "last_commit_hash": "daf2566",
+      "last_commit_hash": "8ba7c37",
       "last_commit_subject": "docs(deploy): [INT-198] record hosted env wiring",
       "remote_url": "https://github.com/supanut9/interview-web.git",
-      "attention": "commits to push"
+      "attention": ""
     },
     {
       "id": "knowledge-api",

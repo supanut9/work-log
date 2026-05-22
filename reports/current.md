@@ -1,6 +1,6 @@
 # Supanut9 Work Log Current Report
 
-Captured: 2026-05-22T15:44:46.171Z
+Captured: 2026-05-22T16:01:33.993Z
 
 Fetch performed: no
 
@@ -10,9 +10,9 @@ Source: scanner
 
 - Configured projects: 24
 - Git projects: 17
-- Clean git projects: 8
-- Dirty projects: 6
-- Projects with commits left to push: 4
+- Clean git projects: 12
+- Dirty projects: 4
+- Projects with commits left to push: 1
 - Behind origin: 0
 - Divergent: 0
 - Missing origin: 1
@@ -25,11 +25,7 @@ Source: scanner
 
 | Project | Product | Branch | Dirty | Ahead | Behind | Origin | Status |
 | --- | --- | --- | ---: | ---: | ---: | --- | --- |
-| `work-log` | tracker | main | 1 | 6 | 0 | yes | commits to push |
-| `auth-ui` | auth | main | 15 | 0 | 0 | yes | dirty |
-| `auth-server` | auth | main | 32 | 0 | 0 | yes | dirty |
-| `interview-api` | interview | main | 0 | 4 | 0 | yes | commits to push |
-| `interview-web` | interview | main | 0 | 12 | 0 | yes | commits to push |
+| `work-log` | tracker | main | 1 | 0 | 0 | yes | dirty |
 | `knowledge-web` | knowledge | main | 1 | 0 | 0 | yes | dirty |
 | `office-empire-simulator` | office-game | main | 0 |  |  | no | missing origin |
 | `orchestra` | orchestra | main | 18 | 0 | 0 | yes | dirty |
@@ -40,9 +36,6 @@ Source: scanner
 
 | Project | Product | Branch | Dirty | Ahead | Behind | Origin | Status |
 | --- | --- | --- | ---: | ---: | ---: | --- | --- |
-| `work-log` | tracker | main | 1 | 6 | 0 | yes | commits to push |
-| `interview-api` | interview | main | 0 | 4 | 0 | yes | commits to push |
-| `interview-web` | interview | main | 0 | 12 | 0 | yes | commits to push |
 | `realtime-service` | community | main | 4 | 8 | 0 | yes | commits to push |
 
 
@@ -50,9 +43,7 @@ Source: scanner
 
 | Project | Product | Branch | Dirty | Ahead | Behind | Origin | Status |
 | --- | --- | --- | ---: | ---: | ---: | --- | --- |
-| `work-log` | tracker | main | 1 | 6 | 0 | yes | commits to push |
-| `auth-ui` | auth | main | 15 | 0 | 0 | yes | dirty |
-| `auth-server` | auth | main | 32 | 0 | 0 | yes | dirty |
+| `work-log` | tracker | main | 1 | 0 | 0 | yes | dirty |
 | `knowledge-web` | knowledge | main | 1 | 0 | 0 | yes | dirty |
 | `orchestra` | orchestra | main | 18 | 0 | 0 | yes | dirty |
 | `realtime-service` | community | main | 4 | 8 | 0 | yes | commits to push |
@@ -113,9 +104,9 @@ Use the task boards and phase docs above as the next-plan source. Projects witho
 
 | Project | Product | Branch | Dirty | Ahead | Behind | Origin | Status |
 | --- | --- | --- | ---: | ---: | ---: | --- | --- |
-| `work-log` | tracker | main | 1 | 6 | 0 | yes | commits to push |
-| `auth-ui` | auth | main | 15 | 0 | 0 | yes | dirty |
-| `auth-server` | auth | main | 32 | 0 | 0 | yes | dirty |
+| `work-log` | tracker | main | 1 | 0 | 0 | yes | dirty |
+| `auth-ui` | auth | main | 0 | 0 | 0 | yes | ok |
+| `auth-server` | auth | main | 0 | 0 | 0 | yes | ok |
 | `ai-engineering-system` | ai-engineering | main | 0 | 0 | 0 | yes | ok |
 | `cms-admin` | cms |  | 0 |  |  | no | ok |
 | `cms-api` | cms |  | 0 |  |  | no | ok |
@@ -124,8 +115,8 @@ Use the task boards and phase docs above as the next-plan source. Projects witho
 | `form-admin` | forms |  | 0 |  |  | no | ok |
 | `form-api` | forms |  | 0 |  |  | no | ok |
 | `form-web` | forms |  | 0 |  |  | no | ok |
-| `interview-api` | interview | main | 0 | 4 | 0 | yes | commits to push |
-| `interview-web` | interview | main | 0 | 12 | 0 | yes | commits to push |
+| `interview-api` | interview | main | 0 | 0 | 0 | yes | ok |
+| `interview-web` | interview | main | 0 | 0 | 0 | yes | ok |
 | `knowledge-api` | knowledge | main | 0 | 0 | 0 | yes | ok |
 | `knowledge-web` | knowledge | main | 1 | 0 | 0 | yes | dirty |
 | `language-api` | language | main | 0 | 0 | 0 | yes | ok |
