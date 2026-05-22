@@ -1,6 +1,6 @@
 # Supanut9 Work Log Current Report
 
-Captured: 2026-05-22T16:01:33.993Z
+Captured: 2026-05-22T16:10:53.971Z
 
 Fetch performed: no
 
@@ -12,7 +12,7 @@ Source: scanner
 - Git projects: 17
 - Clean git projects: 12
 - Dirty projects: 4
-- Projects with commits left to push: 1
+- Projects with commits left to push: 2
 - Behind origin: 0
 - Divergent: 0
 - Missing origin: 1
@@ -25,7 +25,7 @@ Source: scanner
 
 | Project | Product | Branch | Dirty | Ahead | Behind | Origin | Status |
 | --- | --- | --- | ---: | ---: | ---: | --- | --- |
-| `work-log` | tracker | main | 1 | 0 | 0 | yes | dirty |
+| `work-log` | tracker | main | 1 | 1 | 0 | yes | commits to push |
 | `knowledge-web` | knowledge | main | 1 | 0 | 0 | yes | dirty |
 | `office-empire-simulator` | office-game | main | 0 |  |  | no | missing origin |
 | `orchestra` | orchestra | main | 18 | 0 | 0 | yes | dirty |
@@ -36,6 +36,7 @@ Source: scanner
 
 | Project | Product | Branch | Dirty | Ahead | Behind | Origin | Status |
 | --- | --- | --- | ---: | ---: | ---: | --- | --- |
+| `work-log` | tracker | main | 1 | 1 | 0 | yes | commits to push |
 | `realtime-service` | community | main | 4 | 8 | 0 | yes | commits to push |
 
 
@@ -43,7 +44,7 @@ Source: scanner
 
 | Project | Product | Branch | Dirty | Ahead | Behind | Origin | Status |
 | --- | --- | --- | ---: | ---: | ---: | --- | --- |
-| `work-log` | tracker | main | 1 | 0 | 0 | yes | dirty |
+| `work-log` | tracker | main | 1 | 1 | 0 | yes | commits to push |
 | `knowledge-web` | knowledge | main | 1 | 0 | 0 | yes | dirty |
 | `orchestra` | orchestra | main | 18 | 0 | 0 | yes | dirty |
 | `realtime-service` | community | main | 4 | 8 | 0 | yes | commits to push |
@@ -104,7 +105,7 @@ Use the task boards and phase docs above as the next-plan source. Projects witho
 
 | Project | Product | Branch | Dirty | Ahead | Behind | Origin | Status |
 | --- | --- | --- | ---: | ---: | ---: | --- | --- |
-| `work-log` | tracker | main | 1 | 0 | 0 | yes | dirty |
+| `work-log` | tracker | main | 1 | 1 | 0 | yes | commits to push |
 | `auth-ui` | auth | main | 0 | 0 | 0 | yes | ok |
 | `auth-server` | auth | main | 0 | 0 | 0 | yes | ok |
 | `ai-engineering-system` | ai-engineering | main | 0 | 0 | 0 | yes | ok |
