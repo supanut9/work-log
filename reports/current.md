@@ -1,17 +1,17 @@
 # Supanut9 Work Log Current Report
 
-Captured: 2026-05-22T02:34:48.077+00:00
+Captured: 2026-05-22T14:42:34.097Z
 
 Fetch performed: no
 
-Source: postgres
+Source: scanner
 
 ## Summary
 
 - Configured projects: 24
 - Git projects: 17
 - Clean git projects: 8
-- Dirty projects: 6
+- Dirty projects: 8
 - Projects with commits left to push: 4
 - Behind origin: 0
 - Divergent: 0
@@ -25,37 +25,39 @@ Source: postgres
 
 | Project | Product | Branch | Dirty | Ahead | Behind | Origin | Status |
 | --- | --- | --- | ---: | ---: | ---: | --- | --- |
-| `auth-server` | auth | main | 32 | 0 | 0 | yes | dirty |
+| `work-log` | tracker | main | 1 | 2 | 0 | yes | commits to push |
 | `auth-ui` | auth | main | 15 | 0 | 0 | yes | dirty |
-| `interview-api` | interview | main | 0 | 1 | 0 | yes | commits to push |
-| `interview-web` | interview | main | 0 | 7 | 0 | yes | commits to push |
+| `auth-server` | auth | main | 32 | 0 | 0 | yes | dirty |
+| `interview-api` | interview | main | 25 | 1 | 0 | yes | commits to push |
+| `interview-web` | interview | main | 22 | 7 | 0 | yes | commits to push |
 | `knowledge-web` | knowledge | main | 1 | 0 | 0 | yes | dirty |
 | `office-empire-simulator` | office-game | main | 0 |  |  | no | missing origin |
-| `orchestra` | orchestra | main | 1 | 0 | 0 | yes | dirty |
+| `orchestra` | orchestra | main | 18 | 0 | 0 | yes | dirty |
 | `realtime-service` | community | main | 4 | 8 | 0 | yes | commits to push |
-| `work-log` | tracker | main | 1 | 1 | 0 | yes | commits to push |
 
 
 ## Commits Left To Push
 
 | Project | Product | Branch | Dirty | Ahead | Behind | Origin | Status |
 | --- | --- | --- | ---: | ---: | ---: | --- | --- |
-| `interview-api` | interview | main | 0 | 1 | 0 | yes | commits to push |
-| `interview-web` | interview | main | 0 | 7 | 0 | yes | commits to push |
+| `work-log` | tracker | main | 1 | 2 | 0 | yes | commits to push |
+| `interview-api` | interview | main | 25 | 1 | 0 | yes | commits to push |
+| `interview-web` | interview | main | 22 | 7 | 0 | yes | commits to push |
 | `realtime-service` | community | main | 4 | 8 | 0 | yes | commits to push |
-| `work-log` | tracker | main | 1 | 1 | 0 | yes | commits to push |
 
 
 ## Dirty Work
 
 | Project | Product | Branch | Dirty | Ahead | Behind | Origin | Status |
 | --- | --- | --- | ---: | ---: | ---: | --- | --- |
-| `auth-server` | auth | main | 32 | 0 | 0 | yes | dirty |
+| `work-log` | tracker | main | 1 | 2 | 0 | yes | commits to push |
 | `auth-ui` | auth | main | 15 | 0 | 0 | yes | dirty |
+| `auth-server` | auth | main | 32 | 0 | 0 | yes | dirty |
+| `interview-api` | interview | main | 25 | 1 | 0 | yes | commits to push |
+| `interview-web` | interview | main | 22 | 7 | 0 | yes | commits to push |
 | `knowledge-web` | knowledge | main | 1 | 0 | 0 | yes | dirty |
-| `orchestra` | orchestra | main | 1 | 0 | 0 | yes | dirty |
+| `orchestra` | orchestra | main | 18 | 0 | 0 | yes | dirty |
 | `realtime-service` | community | main | 4 | 8 | 0 | yes | commits to push |
-| `work-log` | tracker | main | 1 | 1 | 0 | yes | commits to push |
 
 
 ## Broken Or Missing Remotes
@@ -73,7 +75,7 @@ _None._
 ## Project Progress Sources
 
 - ai-engineering: `ai-engineering-system`.
-- auth: `auth-server`, `auth-ui`.
+- auth: `auth-ui`, `auth-server`.
   Task board: ../docs/auth/phase-1-task-board.md.
   Phase docs: ../docs/auth/phase-2-plan.md, ../docs/auth/phase-2-ui-upgrade-plan.md.
 - cms: `cms-admin`, `cms-api`.
@@ -113,9 +115,10 @@ Use the task boards and phase docs above as the next-plan source. Projects witho
 
 | Project | Product | Branch | Dirty | Ahead | Behind | Origin | Status |
 | --- | --- | --- | ---: | ---: | ---: | --- | --- |
-| `ai-engineering-system` | ai-engineering | main | 0 | 0 | 0 | yes | ok |
-| `auth-server` | auth | main | 32 | 0 | 0 | yes | dirty |
+| `work-log` | tracker | main | 1 | 2 | 0 | yes | commits to push |
 | `auth-ui` | auth | main | 15 | 0 | 0 | yes | dirty |
+| `auth-server` | auth | main | 32 | 0 | 0 | yes | dirty |
+| `ai-engineering-system` | ai-engineering | main | 0 | 0 | 0 | yes | ok |
 | `cms-admin` | cms |  | 0 |  |  | no | ok |
 | `cms-api` | cms |  | 0 |  |  | no | ok |
 | `community-api` | community | main | 0 | 0 | 0 | yes | ok |
@@ -123,18 +126,17 @@ Use the task boards and phase docs above as the next-plan source. Projects witho
 | `form-admin` | forms |  | 0 |  |  | no | ok |
 | `form-api` | forms |  | 0 |  |  | no | ok |
 | `form-web` | forms |  | 0 |  |  | no | ok |
-| `interview-api` | interview | main | 0 | 1 | 0 | yes | commits to push |
-| `interview-web` | interview | main | 0 | 7 | 0 | yes | commits to push |
+| `interview-api` | interview | main | 25 | 1 | 0 | yes | commits to push |
+| `interview-web` | interview | main | 22 | 7 | 0 | yes | commits to push |
 | `knowledge-api` | knowledge | main | 0 | 0 | 0 | yes | ok |
 | `knowledge-web` | knowledge | main | 1 | 0 | 0 | yes | dirty |
 | `language-api` | language | main | 0 | 0 | 0 | yes | ok |
 | `language-web` | language | main | 0 | 0 | 0 | yes | ok |
 | `office-empire-simulator` | office-game | main | 0 |  |  | no | missing origin |
-| `orchestra` | orchestra | main | 1 | 0 | 0 | yes | dirty |
+| `orchestra` | orchestra | main | 18 | 0 | 0 | yes | dirty |
 | `portal-api` | portal | main | 0 | 0 | 0 | yes | ok |
 | `portal-web` | portal | main | 0 | 0 | 0 | yes | ok |
 | `realtime-service` | community | main | 4 | 8 | 0 | yes | commits to push |
 | `trading-api` | trading |  | 0 |  |  | no | ok |
 | `trading-web` | trading |  | 0 |  |  | no | ok |
-| `work-log` | tracker | main | 1 | 1 | 0 | yes | commits to push |
 
