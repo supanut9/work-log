@@ -6,6 +6,11 @@ This repo is the durable work-log tracker for `/Users/supanut.tan/projects/supan
 
 `AGENTS.md` is the canonical shared instruction file for Codex, Claude, Gemini, and other coding agents in this tracker repo. Model-specific files such as `CLAUDE.md` and `GEMINI.md` should stay thin pointers to this file and must not duplicate shared tracker rules.
 
+## Deployment Runbooks
+
+- Vercel workspace deployments: `docs/deploy/vercel-deploy-runbook.md`
+- Workspace root mirror: `../docs/deploy/vercel-deploy-runbook.md`
+
 ## Scope
 
 - Track only projects listed in `config/projects.yml`.
