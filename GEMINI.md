@@ -1,6 +1,7 @@
 # GEMINI.md
 
-This repo tracks selected projects under `/Users/supanut.tan/projects/supanut9`.
+Shared tracker instructions live in `AGENTS.md`.
 
-Use `AGENTS.md` and `config/projects.yml` as the source of truth. The root workspace is intentionally not a git repository.
+Gemini should read `AGENTS.md` first and treat it as the canonical rule file for this tracker repo, including GitHub account, commit, report, queue, and daily-log rules.
 
+Keep this file as a compatibility pointer only. Do not duplicate shared rules here.

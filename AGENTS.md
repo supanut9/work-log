@@ -2,6 +2,10 @@
 
 This repo is the durable work-log tracker for `/Users/supanut.tan/projects/supanut9`.
 
+## AI Instruction Index
+
+`AGENTS.md` is the canonical shared instruction file for Codex, Claude, Gemini, and other coding agents in this tracker repo. Model-specific files such as `CLAUDE.md` and `GEMINI.md` should stay thin pointers to this file and must not duplicate shared tracker rules.
+
 ## Scope
 
 - Track only projects listed in `config/projects.yml`.
@@ -18,6 +22,10 @@ This repo is the durable work-log tracker for `/Users/supanut.tan/projects/supan
 5. Run `npm run queue` to pick the next repo action from current stats.
 6. If tracked repo status changed, refresh reports with `npm run report` or `npm run report:db`.
 7. Commit this repo with tracker-action scopes.
+
+## GitHub Account
+
+Use GitHub account `supanut9` for this workspace and all tracked sibling project repos unless the user explicitly says otherwise. Commits should use the `supanut9` author/committer identity, and GitHub remotes should point at the `supanut9` account or organization paths.
 
 ## When To Add A Log Entry
 
