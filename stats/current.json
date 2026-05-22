@@ -1,14 +1,14 @@
 {
-  "captured_at": "2026-05-22T02:23:20.26+00:00",
+  "captured_at": "2026-05-22T02:34:48.077+00:00",
   "fetch_performed": false,
   "db_write_performed": true,
   "source": "postgres",
   "totals": {
     "configured_projects": 24,
     "git_projects": 17,
-    "clean_git_projects": 9,
+    "clean_git_projects": 8,
     "dirty_projects": 6,
-    "commits_left_to_push_projects": 2,
+    "commits_left_to_push_projects": 4,
     "behind_projects": 0,
     "divergent_projects": 0,
     "missing_origin_projects": 1,
@@ -40,7 +40,7 @@
         "git_health",
         "progress_health"
       ],
-      "captured_at": "2026-05-22T02:23:20.26+00:00",
+      "captured_at": "2026-05-22T02:34:48.077+00:00",
       "branch": "main",
       "dirty_files": 0,
       "ahead": 0,
@@ -88,7 +88,7 @@
         "git_health",
         "progress_health"
       ],
-      "captured_at": "2026-05-22T02:23:20.26+00:00",
+      "captured_at": "2026-05-22T02:34:48.077+00:00",
       "branch": "main",
       "dirty_files": 32,
       "ahead": 0,
@@ -138,7 +138,7 @@
         "git_health",
         "progress_health"
       ],
-      "captured_at": "2026-05-22T02:23:20.26+00:00",
+      "captured_at": "2026-05-22T02:34:48.077+00:00",
       "branch": "main",
       "dirty_files": 15,
       "ahead": 0,
@@ -185,7 +185,7 @@
       "stats": [
         "progress_health"
       ],
-      "captured_at": "2026-05-22T02:23:20.26+00:00",
+      "captured_at": "2026-05-22T02:34:48.077+00:00",
       "branch": null,
       "dirty_files": 0,
       "ahead": null,
@@ -232,7 +232,7 @@
       "stats": [
         "progress_health"
       ],
-      "captured_at": "2026-05-22T02:23:20.26+00:00",
+      "captured_at": "2026-05-22T02:34:48.077+00:00",
       "branch": null,
       "dirty_files": 0,
       "ahead": null,
@@ -278,7 +278,7 @@
         "git_health",
         "progress_health"
       ],
-      "captured_at": "2026-05-22T02:23:20.26+00:00",
+      "captured_at": "2026-05-22T02:34:48.077+00:00",
       "branch": "main",
       "dirty_files": 0,
       "ahead": 0,
@@ -327,7 +327,7 @@
         "git_health",
         "progress_health"
       ],
-      "captured_at": "2026-05-22T02:23:20.26+00:00",
+      "captured_at": "2026-05-22T02:34:48.077+00:00",
       "branch": "main",
       "dirty_files": 0,
       "ahead": 0,
@@ -377,7 +377,7 @@
       "stats": [
         "progress_health"
       ],
-      "captured_at": "2026-05-22T02:23:20.26+00:00",
+      "captured_at": "2026-05-22T02:34:48.077+00:00",
       "branch": null,
       "dirty_files": 0,
       "ahead": null,
@@ -427,7 +427,7 @@
       "stats": [
         "progress_health"
       ],
-      "captured_at": "2026-05-22T02:23:20.26+00:00",
+      "captured_at": "2026-05-22T02:34:48.077+00:00",
       "branch": null,
       "dirty_files": 0,
       "ahead": null,
@@ -475,7 +475,7 @@
       "stats": [
         "progress_health"
       ],
-      "captured_at": "2026-05-22T02:23:20.26+00:00",
+      "captured_at": "2026-05-22T02:34:48.077+00:00",
       "branch": null,
       "dirty_files": 0,
       "ahead": null,
@@ -524,15 +524,15 @@
         "git_health",
         "progress_health"
       ],
-      "captured_at": "2026-05-22T02:23:20.26+00:00",
+      "captured_at": "2026-05-22T02:34:48.077+00:00",
       "branch": "main",
       "dirty_files": 0,
-      "ahead": 0,
+      "ahead": 1,
       "behind": 0,
       "has_origin": true,
       "fetch_status": "not_fetched",
-      "last_commit_hash": "d3e9a30",
-      "last_commit_subject": "docs(plan): [INT-180] record phase 11 closeout",
+      "last_commit_hash": "4be2871",
+      "last_commit_subject": "chore(storage): [INT-186] add local postgres runner",
       "remote_url": "https://github.com/supanut9/interview-api.git",
       "tags": [
         "active",
@@ -540,7 +540,7 @@
       ],
       "is_git_repo": true,
       "exists": true,
-      "attention": ""
+      "attention": "commits to push"
     },
     {
       "id": "interview-web",
@@ -572,15 +572,15 @@
         "git_health",
         "progress_health"
       ],
-      "captured_at": "2026-05-22T02:23:20.26+00:00",
+      "captured_at": "2026-05-22T02:34:48.077+00:00",
       "branch": "main",
       "dirty_files": 0,
-      "ahead": 6,
+      "ahead": 7,
       "behind": 0,
       "has_origin": true,
       "fetch_status": "not_fetched",
-      "last_commit_hash": "0022e1d",
-      "last_commit_subject": "feat(dashboard): [INT-185] link dashboard actions",
+      "last_commit_hash": "f09a548",
+      "last_commit_subject": "feat(dashboard): [INT-187] authenticate dashboard data sources",
       "remote_url": "https://github.com/supanut9/interview-web.git",
       "tags": [
         "active",
@@ -618,7 +618,7 @@
         "git_health",
         "progress_health"
       ],
-      "captured_at": "2026-05-22T02:23:20.26+00:00",
+      "captured_at": "2026-05-22T02:34:48.077+00:00",
       "branch": "main",
       "dirty_files": 0,
       "ahead": 0,
@@ -666,7 +666,7 @@
         "git_health",
         "progress_health"
       ],
-      "captured_at": "2026-05-22T02:23:20.26+00:00",
+      "captured_at": "2026-05-22T02:34:48.077+00:00",
       "branch": "main",
       "dirty_files": 1,
       "ahead": 0,
@@ -712,7 +712,7 @@
         "git_health",
         "progress_health"
       ],
-      "captured_at": "2026-05-22T02:23:20.26+00:00",
+      "captured_at": "2026-05-22T02:34:48.077+00:00",
       "branch": "main",
       "dirty_files": 0,
       "ahead": 0,
@@ -761,7 +761,7 @@
         "git_health",
         "progress_health"
       ],
-      "captured_at": "2026-05-22T02:23:20.26+00:00",
+      "captured_at": "2026-05-22T02:34:48.077+00:00",
       "branch": "main",
       "dirty_files": 0,
       "ahead": 0,
@@ -806,7 +806,7 @@
         "git_health",
         "progress_health"
       ],
-      "captured_at": "2026-05-22T02:23:20.26+00:00",
+      "captured_at": "2026-05-22T02:34:48.077+00:00",
       "branch": "main",
       "dirty_files": 0,
       "ahead": null,
@@ -852,7 +852,7 @@
         "git_health",
         "progress_health"
       ],
-      "captured_at": "2026-05-22T02:23:20.26+00:00",
+      "captured_at": "2026-05-22T02:34:48.077+00:00",
       "branch": "main",
       "dirty_files": 1,
       "ahead": 0,
@@ -892,7 +892,7 @@
       "stats": [
         "git_health"
       ],
-      "captured_at": "2026-05-22T02:23:20.26+00:00",
+      "captured_at": "2026-05-22T02:34:48.077+00:00",
       "branch": "main",
       "dirty_files": 0,
       "ahead": 0,
@@ -933,7 +933,7 @@
       "stats": [
         "git_health"
       ],
-      "captured_at": "2026-05-22T02:23:20.26+00:00",
+      "captured_at": "2026-05-22T02:34:48.077+00:00",
       "branch": "main",
       "dirty_files": 0,
       "ahead": 0,
@@ -980,7 +980,7 @@
         "git_health",
         "progress_health"
       ],
-      "captured_at": "2026-05-22T02:23:20.26+00:00",
+      "captured_at": "2026-05-22T02:34:48.077+00:00",
       "branch": "main",
       "dirty_files": 4,
       "ahead": 8,
@@ -1020,7 +1020,7 @@
       "stats": [
         "progress_health"
       ],
-      "captured_at": "2026-05-22T02:23:20.26+00:00",
+      "captured_at": "2026-05-22T02:34:48.077+00:00",
       "branch": null,
       "dirty_files": 0,
       "ahead": null,
@@ -1061,7 +1061,7 @@
       "stats": [
         "progress_health"
       ],
-      "captured_at": "2026-05-22T02:23:20.26+00:00",
+      "captured_at": "2026-05-22T02:34:48.077+00:00",
       "branch": null,
       "dirty_files": 0,
       "ahead": null,
@@ -1108,15 +1108,15 @@
         "git_health",
         "progress_health"
       ],
-      "captured_at": "2026-05-22T02:23:20.26+00:00",
+      "captured_at": "2026-05-22T02:34:48.077+00:00",
       "branch": "main",
       "dirty_files": 1,
-      "ahead": 0,
+      "ahead": 1,
       "behind": 0,
       "has_origin": true,
       "fetch_status": "not_fetched",
-      "last_commit_hash": "2f6e4a0",
-      "last_commit_subject": "docs: correct interview web log",
+      "last_commit_hash": "4a2139d",
+      "last_commit_subject": "docs(record): [interview-web] [INT-185] log dashboard integration",
       "remote_url": "https://github.com/supanut9/work-log.git",
       "tags": [
         "active",
@@ -1124,7 +1124,7 @@
       ],
       "is_git_repo": true,
       "exists": true,
-      "attention": "dirty"
+      "attention": "commits to push"
     }
   ]
 }
