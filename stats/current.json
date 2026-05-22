@@ -1,5 +1,5 @@
 {
-  "captured_at": "2026-05-22T16:10:53.971Z",
+  "captured_at": "2026-05-22T16:45:56.200Z",
   "fetch_performed": false,
   "db_write_performed": false,
   "source": "scanner",
@@ -8,7 +8,7 @@
     "git_projects": 17,
     "clean_git_projects": 12,
     "dirty_projects": 4,
-    "commits_left_to_push_projects": 2,
+    "commits_left_to_push_projects": 1,
     "behind_projects": 0,
     "divergent_projects": 0,
     "missing_origin_projects": 1,
@@ -56,14 +56,14 @@
       "is_git_repo": true,
       "branch": "main",
       "dirty_files": 1,
-      "ahead": 1,
+      "ahead": 0,
       "behind": 0,
       "has_origin": true,
       "fetch_status": "not_fetched",
-      "last_commit_hash": "f1a90ab",
-      "last_commit_subject": "docs(plan): [work-log] [WORKLOG-001] add Vercel deploy runbook",
+      "last_commit_hash": "a83dbf9",
+      "last_commit_subject": "docs(record): [work-log] [WORKLOG-001] record Vercel runbook",
       "remote_url": "https://github.com/supanut9/work-log.git",
-      "attention": "commits to push"
+      "attention": "dirty"
     },
     {
       "id": "auth-ui",
@@ -158,8 +158,8 @@
       "behind": 0,
       "has_origin": true,
       "fetch_status": "not_fetched",
-      "last_commit_hash": "79931c1",
-      "last_commit_subject": "feat(flow): [AUTH-013] add stateless auth flow",
+      "last_commit_hash": "60bcf4c",
+      "last_commit_subject": "fix(storage): [AUTH-013] keep auth codes stateless-compatible",
       "remote_url": "git@github.com-supanut9:supanut9/auth-server.git",
       "attention": ""
     },
