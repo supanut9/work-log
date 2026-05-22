@@ -1,5 +1,5 @@
 {
-  "captured_at": "2026-05-22T16:45:56.200Z",
+  "captured_at": "2026-05-22T17:24:38.034Z",
   "fetch_performed": false,
   "db_write_performed": false,
   "source": "scanner",
@@ -60,8 +60,8 @@
       "behind": 0,
       "has_origin": true,
       "fetch_status": "not_fetched",
-      "last_commit_hash": "a83dbf9",
-      "last_commit_subject": "docs(record): [work-log] [WORKLOG-001] record Vercel runbook",
+      "last_commit_hash": "ee70f1d",
+      "last_commit_subject": "docs(record): [auth-server] [AUTH-013] record staging auth-code fix",
       "remote_url": "https://github.com/supanut9/work-log.git",
       "attention": "dirty"
     },
@@ -632,8 +632,8 @@
       "behind": 0,
       "has_origin": true,
       "fetch_status": "not_fetched",
-      "last_commit_hash": "8ba7c37",
-      "last_commit_subject": "docs(deploy): [INT-198] record hosted env wiring",
+      "last_commit_hash": "34e6278",
+      "last_commit_subject": "fix(auth): [INT-198] stop prefetching hosted login redirect",
       "remote_url": "https://github.com/supanut9/interview-web.git",
       "attention": ""
     },
