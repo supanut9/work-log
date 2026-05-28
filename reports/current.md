@@ -1,6 +1,6 @@
 # Supanut9 Work Log Current Report
 
-Captured: 2026-05-28T15:00:01.613Z
+Captured: 2026-05-28T18:29:05.320Z
 
 Fetch performed: no
 
@@ -11,7 +11,7 @@ Source: scanner
 - Configured projects: 24
 - Git projects: 20
 - Clean git projects: 11
-- Dirty projects: 7
+- Dirty projects: 8
 - Projects with commits left to push: 2
 - Behind origin: 0
 - Divergent: 0
@@ -30,7 +30,7 @@ Source: scanner
 | `interview-api` | interview | main | 28 | 0 | 0 | yes | dirty |
 | `interview-web` | interview | main | 44 | 0 | 0 | yes | dirty |
 | `knowledge-web` | knowledge | main | 1 | 0 | 0 | yes | dirty |
-| `language-api` | language | main | 0 | 1 | 0 | yes | commits to push |
+| `language-api` | language | main | 24 | 18 | 0 | yes | commits to push |
 | `office-empire-simulator` | office-game | main | 0 |  |  | no | missing origin |
 | `orchestra` | orchestra | main | 18 | 0 | 0 | yes | dirty |
 | `realtime-service` | community | main | 4 | 8 | 0 | yes | commits to push |
@@ -40,7 +40,7 @@ Source: scanner
 
 | Project | Product | Branch | Dirty | Ahead | Behind | Origin | Status |
 | --- | --- | --- | ---: | ---: | ---: | --- | --- |
-| `language-api` | language | main | 0 | 1 | 0 | yes | commits to push |
+| `language-api` | language | main | 24 | 18 | 0 | yes | commits to push |
 | `realtime-service` | community | main | 4 | 8 | 0 | yes | commits to push |
 
 
@@ -53,6 +53,7 @@ Source: scanner
 | `interview-api` | interview | main | 28 | 0 | 0 | yes | dirty |
 | `interview-web` | interview | main | 44 | 0 | 0 | yes | dirty |
 | `knowledge-web` | knowledge | main | 1 | 0 | 0 | yes | dirty |
+| `language-api` | language | main | 24 | 18 | 0 | yes | commits to push |
 | `orchestra` | orchestra | main | 18 | 0 | 0 | yes | dirty |
 | `realtime-service` | community | main | 4 | 8 | 0 | yes | commits to push |
 
@@ -127,7 +128,7 @@ Use the task boards and phase docs above as the next-plan source. Projects witho
 | `interview-web` | interview | main | 44 | 0 | 0 | yes | dirty |
 | `knowledge-api` | knowledge | main | 0 | 0 | 0 | yes | ok |
 | `knowledge-web` | knowledge | main | 1 | 0 | 0 | yes | dirty |
-| `language-api` | language | main | 0 | 1 | 0 | yes | commits to push |
+| `language-api` | language | main | 24 | 18 | 0 | yes | commits to push |
 | `language-web` | language | main | 0 | 0 | 0 | yes | ok |
 | `office-empire-simulator` | office-game | main | 0 |  |  | no | missing origin |
 | `orchestra` | orchestra | main | 18 | 0 | 0 | yes | dirty |
