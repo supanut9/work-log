@@ -1,6 +1,6 @@
 # Supanut9 Work Log Current Report
 
-Captured: 2026-05-22T17:24:38.034Z
+Captured: 2026-05-27T18:44:16.075Z
 
 Fetch performed: no
 
@@ -9,9 +9,9 @@ Source: scanner
 ## Summary
 
 - Configured projects: 24
-- Git projects: 17
-- Clean git projects: 12
-- Dirty projects: 4
+- Git projects: 20
+- Clean git projects: 10
+- Dirty projects: 9
 - Projects with commits left to push: 1
 - Behind origin: 0
 - Divergent: 0
@@ -25,8 +25,13 @@ Source: scanner
 
 | Project | Product | Branch | Dirty | Ahead | Behind | Origin | Status |
 | --- | --- | --- | ---: | ---: | ---: | --- | --- |
-| `work-log` | tracker | main | 1 | 0 | 0 | yes | dirty |
+| `work-log` | tracker | main | 4 | 0 | 0 | yes | dirty |
+| `auth-server` | auth | main | 14 | 0 | 0 | yes | dirty |
+| `ai-engineering-system` | ai-engineering | main | 15 | 0 | 0 | yes | dirty |
+| `interview-api` | interview | main | 28 | 0 | 0 | yes | dirty |
+| `interview-web` | interview | main | 44 | 0 | 0 | yes | dirty |
 | `knowledge-web` | knowledge | main | 1 | 0 | 0 | yes | dirty |
+| `language-api` | language | main | 7 | 0 | 0 | yes | dirty |
 | `office-empire-simulator` | office-game | main | 0 |  |  | no | missing origin |
 | `orchestra` | orchestra | main | 18 | 0 | 0 | yes | dirty |
 | `realtime-service` | community | main | 4 | 8 | 0 | yes | commits to push |
@@ -43,8 +48,13 @@ Source: scanner
 
 | Project | Product | Branch | Dirty | Ahead | Behind | Origin | Status |
 | --- | --- | --- | ---: | ---: | ---: | --- | --- |
-| `work-log` | tracker | main | 1 | 0 | 0 | yes | dirty |
+| `work-log` | tracker | main | 4 | 0 | 0 | yes | dirty |
+| `auth-server` | auth | main | 14 | 0 | 0 | yes | dirty |
+| `ai-engineering-system` | ai-engineering | main | 15 | 0 | 0 | yes | dirty |
+| `interview-api` | interview | main | 28 | 0 | 0 | yes | dirty |
+| `interview-web` | interview | main | 44 | 0 | 0 | yes | dirty |
 | `knowledge-web` | knowledge | main | 1 | 0 | 0 | yes | dirty |
+| `language-api` | language | main | 7 | 0 | 0 | yes | dirty |
 | `orchestra` | orchestra | main | 18 | 0 | 0 | yes | dirty |
 | `realtime-service` | community | main | 4 | 8 | 0 | yes | commits to push |
 
@@ -104,22 +114,22 @@ Use the task boards and phase docs above as the next-plan source. Projects witho
 
 | Project | Product | Branch | Dirty | Ahead | Behind | Origin | Status |
 | --- | --- | --- | ---: | ---: | ---: | --- | --- |
-| `work-log` | tracker | main | 1 | 0 | 0 | yes | dirty |
+| `work-log` | tracker | main | 4 | 0 | 0 | yes | dirty |
 | `auth-ui` | auth | main | 0 | 0 | 0 | yes | ok |
-| `auth-server` | auth | main | 0 | 0 | 0 | yes | ok |
-| `ai-engineering-system` | ai-engineering | main | 0 | 0 | 0 | yes | ok |
+| `auth-server` | auth | main | 14 | 0 | 0 | yes | dirty |
+| `ai-engineering-system` | ai-engineering | main | 15 | 0 | 0 | yes | dirty |
 | `cms-admin` | cms |  | 0 |  |  | no | ok |
 | `cms-api` | cms |  | 0 |  |  | no | ok |
 | `community-api` | community | main | 0 | 0 | 0 | yes | ok |
 | `community-web` | community | main | 0 | 0 | 0 | yes | ok |
-| `form-admin` | forms |  | 0 |  |  | no | ok |
-| `form-api` | forms |  | 0 |  |  | no | ok |
-| `form-web` | forms |  | 0 |  |  | no | ok |
-| `interview-api` | interview | main | 0 | 0 | 0 | yes | ok |
-| `interview-web` | interview | main | 0 | 0 | 0 | yes | ok |
+| `form-admin` | forms | main | 0 | 0 | 0 | yes | ok |
+| `form-api` | forms | main | 0 | 0 | 0 | yes | ok |
+| `form-web` | forms | main | 0 | 0 | 0 | yes | ok |
+| `interview-api` | interview | main | 28 | 0 | 0 | yes | dirty |
+| `interview-web` | interview | main | 44 | 0 | 0 | yes | dirty |
 | `knowledge-api` | knowledge | main | 0 | 0 | 0 | yes | ok |
 | `knowledge-web` | knowledge | main | 1 | 0 | 0 | yes | dirty |
-| `language-api` | language | main | 0 | 0 | 0 | yes | ok |
+| `language-api` | language | main | 7 | 0 | 0 | yes | dirty |
 | `language-web` | language | main | 0 | 0 | 0 | yes | ok |
 | `office-empire-simulator` | office-game | main | 0 |  |  | no | missing origin |
 | `orchestra` | orchestra | main | 18 | 0 | 0 | yes | dirty |
