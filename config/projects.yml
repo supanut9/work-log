@@ -430,3 +430,21 @@ projects:
     push_policy: push_after_verified_slice
     milestone_git_tags: phase_closeout
     stats: [progress_health]
+
+  - id: macro-web
+    name: macro-web
+    path: ../macro-web
+    enabled: true
+    product: macro
+    repo_kind: nested_git
+    app_kind: web
+    tags: [frontend, fullstack, macro, markets, active]
+    tech: [nextjs, react, typescript, tailwind, recharts, luxon, bun]
+    task_board: null
+    phase_docs: [../macro-plan.md, ../macro-design-brief.md]
+    architecture_docs: [../macro-plan.md, ../macro-web/design/README.md]
+    runbooks: [../docs/deploy/vercel-deploy-runbook.md]
+    branch_policy: main_verified_slice
+    push_policy: push_after_verified_slice
+    milestone_git_tags: phase_closeout
+    stats: [git_health, progress_health]
