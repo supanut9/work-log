@@ -1,6 +1,6 @@
 # Supanut9 Work Log Current Report
 
-Captured: 2026-05-31T10:34:25.047Z
+Captured: 2026-09-09T13:56:30.529Z
 
 Fetch performed: no
 
@@ -8,28 +8,30 @@ Source: scanner
 
 ## Summary
 
-- Configured projects: 24
-- Git projects: 20
-- Clean git projects: 12
-- Dirty projects: 6
-- Projects with commits left to push: 4
+- Configured projects: 25
+- Git projects: 21
+- Clean git projects: 11
+- Dirty projects: 8
+- Projects with commits left to push: 3
 - Behind origin: 0
 - Divergent: 0
 - Missing origin: 1
 - Fetch failed: 0
 - Missing paths: 0
-- No task board: 7
+- No task board: 8
 - No phase docs: 5
 
 ## Repos Needing Attention
 
 | Project | Product | Branch | Dirty | Ahead | Behind | Origin | Status |
 | --- | --- | --- | ---: | ---: | ---: | --- | --- |
-| `work-log` | tracker | main | 1 | 6 | 0 | yes | commits to push |
+| `work-log` | tracker | main | 3 | 0 | 0 | yes | dirty |
 | `ai-engineering-system` | ai-engineering | main | 10 | 0 | 0 | yes | dirty |
 | `interview-api` | interview | main | 0 | 1 | 0 | yes | commits to push |
 | `interview-web` | interview | main | 2 | 7 | 0 | yes | commits to push |
 | `knowledge-web` | knowledge | main | 6 | 0 | 0 | yes | dirty |
+| `language-api` | language | main | 2 | 0 | 0 | yes | dirty |
+| `language-web` | language | main | 1 | 0 | 0 | yes | dirty |
 | `office-empire-simulator` | office-game | main | 0 |  |  | no | missing origin |
 | `orchestra` | orchestra | main | 18 | 0 | 0 | yes | dirty |
 | `realtime-service` | community | main | 4 | 8 | 0 | yes | commits to push |
@@ -39,7 +41,6 @@ Source: scanner
 
 | Project | Product | Branch | Dirty | Ahead | Behind | Origin | Status |
 | --- | --- | --- | ---: | ---: | ---: | --- | --- |
-| `work-log` | tracker | main | 1 | 6 | 0 | yes | commits to push |
 | `interview-api` | interview | main | 0 | 1 | 0 | yes | commits to push |
 | `interview-web` | interview | main | 2 | 7 | 0 | yes | commits to push |
 | `realtime-service` | community | main | 4 | 8 | 0 | yes | commits to push |
@@ -49,10 +50,12 @@ Source: scanner
 
 | Project | Product | Branch | Dirty | Ahead | Behind | Origin | Status |
 | --- | --- | --- | ---: | ---: | ---: | --- | --- |
-| `work-log` | tracker | main | 1 | 6 | 0 | yes | commits to push |
+| `work-log` | tracker | main | 3 | 0 | 0 | yes | dirty |
 | `ai-engineering-system` | ai-engineering | main | 10 | 0 | 0 | yes | dirty |
 | `interview-web` | interview | main | 2 | 7 | 0 | yes | commits to push |
 | `knowledge-web` | knowledge | main | 6 | 0 | 0 | yes | dirty |
+| `language-api` | language | main | 2 | 0 | 0 | yes | dirty |
+| `language-web` | language | main | 1 | 0 | 0 | yes | dirty |
 | `orchestra` | orchestra | main | 18 | 0 | 0 | yes | dirty |
 | `realtime-service` | community | main | 4 | 8 | 0 | yes | commits to push |
 
@@ -93,6 +96,8 @@ _None._
 - language: `language-api`, `language-web`.
   Task board: ../docs/language/language-task-board.md.
   Phase docs: ../docs/language/language-phase-9.md, ../docs/language/language-phase-9-closeout.md.
+- macro: `macro-web`.
+  Phase docs: ../macro-plan.md, ../macro-design-brief.md.
 - office-game: `office-empire-simulator`.
   Task board: ../office-empire-simulator/docs/task-board.md.
   Phase docs: ../office-empire-simulator/docs/12-phase-3-slice.md.
@@ -112,7 +117,7 @@ Use the task boards and phase docs above as the next-plan source. Projects witho
 
 | Project | Product | Branch | Dirty | Ahead | Behind | Origin | Status |
 | --- | --- | --- | ---: | ---: | ---: | --- | --- |
-| `work-log` | tracker | main | 1 | 6 | 0 | yes | commits to push |
+| `work-log` | tracker | main | 3 | 0 | 0 | yes | dirty |
 | `auth-ui` | auth | main | 0 | 0 | 0 | yes | ok |
 | `auth-server` | auth | main | 0 | 0 | 0 | yes | ok |
 | `ai-engineering-system` | ai-engineering | main | 10 | 0 | 0 | yes | dirty |
@@ -127,8 +132,8 @@ Use the task boards and phase docs above as the next-plan source. Projects witho
 | `interview-web` | interview | main | 2 | 7 | 0 | yes | commits to push |
 | `knowledge-api` | knowledge | main | 0 | 0 | 0 | yes | ok |
 | `knowledge-web` | knowledge | main | 6 | 0 | 0 | yes | dirty |
-| `language-api` | language | main | 0 | 0 | 0 | yes | ok |
-| `language-web` | language | main | 0 | 0 | 0 | yes | ok |
+| `language-api` | language | main | 2 | 0 | 0 | yes | dirty |
+| `language-web` | language | main | 1 | 0 | 0 | yes | dirty |
 | `office-empire-simulator` | office-game | main | 0 |  |  | no | missing origin |
 | `orchestra` | orchestra | main | 18 | 0 | 0 | yes | dirty |
 | `portal-api` | portal | main | 0 | 0 | 0 | yes | ok |
@@ -136,4 +141,5 @@ Use the task boards and phase docs above as the next-plan source. Projects witho
 | `realtime-service` | community | main | 4 | 8 | 0 | yes | commits to push |
 | `trading-api` | trading |  | 0 |  |  | no | ok |
 | `trading-web` | trading |  | 0 |  |  | no | ok |
+| `macro-web` | macro | main | 0 | 0 | 0 | yes | ok |
 

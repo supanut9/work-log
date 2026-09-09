@@ -1,20 +1,20 @@
 {
-  "captured_at": "2026-05-31T10:34:25.047Z",
+  "captured_at": "2026-09-09T13:56:30.529Z",
   "fetch_performed": false,
   "db_write_performed": false,
   "source": "scanner",
   "totals": {
-    "configured_projects": 24,
-    "git_projects": 20,
-    "clean_git_projects": 12,
-    "dirty_projects": 6,
-    "commits_left_to_push_projects": 4,
+    "configured_projects": 25,
+    "git_projects": 21,
+    "clean_git_projects": 11,
+    "dirty_projects": 8,
+    "commits_left_to_push_projects": 3,
     "behind_projects": 0,
     "divergent_projects": 0,
     "missing_origin_projects": 1,
     "fetch_failed_projects": 0,
     "missing_path_projects": 0,
-    "no_task_board_projects": 7,
+    "no_task_board_projects": 8,
     "no_phase_docs_projects": 5
   },
   "projects": [
@@ -55,15 +55,15 @@
       "exists": true,
       "is_git_repo": true,
       "branch": "main",
-      "dirty_files": 1,
-      "ahead": 6,
+      "dirty_files": 3,
+      "ahead": 0,
       "behind": 0,
       "has_origin": true,
       "fetch_status": "not_fetched",
-      "last_commit_hash": "48db4e4",
-      "last_commit_subject": "docs(tracker-action): [interview-web] [INT-267] log weekly report routing",
-      "remote_url": "https://github.com/supanut9/work-log.git",
-      "attention": "commits to push"
+      "last_commit_hash": "1bc6814",
+      "last_commit_subject": "chore(register): [macro-web] [MACRO-001] register macro-web as tracked project",
+      "remote_url": "git@github.com-supanut9:supanut9/work-log.git",
+      "attention": "dirty"
     },
     {
       "id": "auth-ui",
@@ -158,8 +158,8 @@
       "behind": 0,
       "has_origin": true,
       "fetch_status": "not_fetched",
-      "last_commit_hash": "70f23a5",
-      "last_commit_subject": "feat(otp): [AUTH-015] OTP test-hint flow + delivery wiring",
+      "last_commit_hash": "8af6dab",
+      "last_commit_subject": "fix(security): [AUTH-000] patch 16 HIGH dependency vulnerabilities",
       "remote_url": "git@github.com-supanut9:supanut9/auth-server.git",
       "attention": ""
     },
@@ -768,15 +768,15 @@
       "exists": true,
       "is_git_repo": true,
       "branch": "main",
-      "dirty_files": 0,
+      "dirty_files": 2,
       "ahead": 0,
       "behind": 0,
       "has_origin": true,
       "fetch_status": "not_fetched",
-      "last_commit_hash": "4b47f19",
-      "last_commit_subject": "perf(app): [LANG-312] reuse fetched progress in course readiness fan-out",
+      "last_commit_hash": "236dc4d",
+      "last_commit_subject": "content(placement): [LANG-355] add C1/C2 placement questions for all 6 languages",
       "remote_url": "git@github.com-supanut9:supanut9/language-api.git",
-      "attention": ""
+      "attention": "dirty"
     },
     {
       "id": "language-web",
@@ -817,15 +817,15 @@
       "exists": true,
       "is_git_repo": true,
       "branch": "main",
-      "dirty_files": 0,
+      "dirty_files": 1,
       "ahead": 0,
       "behind": 0,
       "has_origin": true,
       "fetch_status": "not_fetched",
-      "last_commit_hash": "548e26f",
-      "last_commit_subject": "Revert \"perf(web): [LANG-319] persistent app shell via (app) route group\"",
+      "last_commit_hash": "21be86a",
+      "last_commit_subject": "fix(security): [LANG-356] bump better-auth 1.6.9 -> 1.6.14 (CVE-2026-45337)",
       "remote_url": "git@github.com-supanut9:supanut9/language-web.git",
-      "attention": ""
+      "attention": "dirty"
     },
     {
       "id": "office-empire-simulator",
@@ -993,8 +993,8 @@
       "behind": 0,
       "has_origin": true,
       "fetch_status": "not_fetched",
-      "last_commit_hash": "e7f8c9a",
-      "last_commit_subject": "chore(debug): log per-step failure in readSession to find why home shows signed-out with valid cookies",
+      "last_commit_hash": "236ba57",
+      "last_commit_subject": "fix(security): [PORTAL-000] patch 13 HIGH dependency vulnerabilities",
       "remote_url": "git@github.com-supanut9:supanut9/portal-web.git",
       "attention": ""
     },
@@ -1124,6 +1124,63 @@
       "last_commit_hash": null,
       "last_commit_subject": null,
       "remote_url": null,
+      "attention": ""
+    },
+    {
+      "id": "macro-web",
+      "name": "macro-web",
+      "path": "../macro-web",
+      "enabled": true,
+      "product": "macro",
+      "repo_kind": "nested_git",
+      "app_kind": "web",
+      "tags": [
+        "frontend",
+        "fullstack",
+        "macro",
+        "markets",
+        "active"
+      ],
+      "tech": [
+        "nextjs",
+        "react",
+        "typescript",
+        "tailwind",
+        "recharts",
+        "luxon",
+        "bun"
+      ],
+      "task_board": null,
+      "phase_docs": [
+        "../macro-plan.md",
+        "../macro-design-brief.md"
+      ],
+      "architecture_docs": [
+        "../macro-plan.md",
+        "../macro-web/design/README.md"
+      ],
+      "runbooks": [
+        "../docs/deploy/vercel-deploy-runbook.md"
+      ],
+      "branch_policy": "main_verified_slice",
+      "push_policy": "push_after_verified_slice",
+      "milestone_git_tags": "phase_closeout",
+      "stats": [
+        "git_health",
+        "progress_health"
+      ],
+      "absolute_path": "/Users/supanut.tan/projects/supanut9/macro-web",
+      "exists": true,
+      "is_git_repo": true,
+      "branch": "main",
+      "dirty_files": 0,
+      "ahead": 0,
+      "behind": 0,
+      "has_origin": true,
+      "fetch_status": "not_fetched",
+      "last_commit_hash": "92840fc",
+      "last_commit_subject": "fix(data): [MACRO-277] repair two retired FRED country series, and check them all",
+      "remote_url": "git@github.com-supanut9:supanut9/macro-web.git",
       "attention": ""
     }
   ]
