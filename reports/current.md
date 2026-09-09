@@ -1,6 +1,6 @@
 # Supanut9 Work Log Current Report
 
-Captured: 2026-09-09T13:56:30.529Z
+Captured: 2026-09-09T14:44:06.995Z
 
 Fetch performed: no
 
@@ -25,7 +25,7 @@ Source: scanner
 
 | Project | Product | Branch | Dirty | Ahead | Behind | Origin | Status |
 | --- | --- | --- | ---: | ---: | ---: | --- | --- |
-| `work-log` | tracker | main | 3 | 0 | 0 | yes | dirty |
+| `work-log` | tracker | main | 1 | 0 | 0 | yes | dirty |
 | `ai-engineering-system` | ai-engineering | main | 10 | 0 | 0 | yes | dirty |
 | `interview-api` | interview | main | 0 | 1 | 0 | yes | commits to push |
 | `interview-web` | interview | main | 2 | 7 | 0 | yes | commits to push |
@@ -50,7 +50,7 @@ Source: scanner
 
 | Project | Product | Branch | Dirty | Ahead | Behind | Origin | Status |
 | --- | --- | --- | ---: | ---: | ---: | --- | --- |
-| `work-log` | tracker | main | 3 | 0 | 0 | yes | dirty |
+| `work-log` | tracker | main | 1 | 0 | 0 | yes | dirty |
 | `ai-engineering-system` | ai-engineering | main | 10 | 0 | 0 | yes | dirty |
 | `interview-web` | interview | main | 2 | 7 | 0 | yes | commits to push |
 | `knowledge-web` | knowledge | main | 6 | 0 | 0 | yes | dirty |
@@ -117,7 +117,7 @@ Use the task boards and phase docs above as the next-plan source. Projects witho
 
 | Project | Product | Branch | Dirty | Ahead | Behind | Origin | Status |
 | --- | --- | --- | ---: | ---: | ---: | --- | --- |
-| `work-log` | tracker | main | 3 | 0 | 0 | yes | dirty |
+| `work-log` | tracker | main | 1 | 0 | 0 | yes | dirty |
 | `auth-ui` | auth | main | 0 | 0 | 0 | yes | ok |
 | `auth-server` | auth | main | 0 | 0 | 0 | yes | ok |
 | `ai-engineering-system` | ai-engineering | main | 10 | 0 | 0 | yes | dirty |

@@ -1,5 +1,5 @@
 {
-  "captured_at": "2026-09-09T13:56:30.529Z",
+  "captured_at": "2026-09-09T14:44:06.995Z",
   "fetch_performed": false,
   "db_write_performed": false,
   "source": "scanner",
@@ -55,13 +55,13 @@
       "exists": true,
       "is_git_repo": true,
       "branch": "main",
-      "dirty_files": 3,
+      "dirty_files": 1,
       "ahead": 0,
       "behind": 0,
       "has_origin": true,
       "fetch_status": "not_fetched",
-      "last_commit_hash": "1bc6814",
-      "last_commit_subject": "chore(register): [macro-web] [MACRO-001] register macro-web as tracked project",
+      "last_commit_hash": "db8ad78",
+      "last_commit_subject": "docs(closeout): [macro-web] [MACRO-270..277] log Phase 13 deploy and the FRED reliability fixes",
       "remote_url": "git@github.com-supanut9:supanut9/work-log.git",
       "attention": "dirty"
     },
@@ -1178,8 +1178,8 @@
       "behind": 0,
       "has_origin": true,
       "fetch_status": "not_fetched",
-      "last_commit_hash": "92840fc",
-      "last_commit_subject": "fix(data): [MACRO-277] repair two retired FRED country series, and check them all",
+      "last_commit_hash": "4072184",
+      "last_commit_subject": "chore(android): [MACRO-278] bump to versionCode 2 / versionName 1.1",
       "remote_url": "git@github.com-supanut9:supanut9/macro-web.git",
       "attention": ""
     }
