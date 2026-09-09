@@ -1,5 +1,5 @@
 {
-  "captured_at": "2026-09-09T14:44:06.995Z",
+  "captured_at": "2026-09-09T15:38:10.020Z",
   "fetch_performed": false,
   "db_write_performed": false,
   "source": "scanner",
@@ -60,8 +60,8 @@
       "behind": 0,
       "has_origin": true,
       "fetch_status": "not_fetched",
-      "last_commit_hash": "db8ad78",
-      "last_commit_subject": "docs(closeout): [macro-web] [MACRO-270..277] log Phase 13 deploy and the FRED reliability fixes",
+      "last_commit_hash": "4168bcb",
+      "last_commit_subject": "docs(closeout): [macro-web] [MACRO-278] log versionCode 2 APK build",
       "remote_url": "git@github.com-supanut9:supanut9/work-log.git",
       "attention": "dirty"
     },
@@ -1178,8 +1178,8 @@
       "behind": 0,
       "has_origin": true,
       "fetch_status": "not_fetched",
-      "last_commit_hash": "4072184",
-      "last_commit_subject": "chore(android): [MACRO-278] bump to versionCode 2 / versionName 1.1",
+      "last_commit_hash": "44bc937",
+      "last_commit_subject": "feat(news): [MACRO-279] read articles inside the app via Custom Tabs",
       "remote_url": "git@github.com-supanut9:supanut9/macro-web.git",
       "attention": ""
     }
