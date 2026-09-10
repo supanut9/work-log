@@ -1,5 +1,5 @@
 {
-  "captured_at": "2026-09-10T03:32:42.571Z",
+  "captured_at": "2026-09-10T03:34:29.973Z",
   "fetch_performed": false,
   "db_write_performed": false,
   "source": "scanner",
@@ -60,8 +60,8 @@
       "behind": 0,
       "has_origin": true,
       "fetch_status": "not_fetched",
-      "last_commit_hash": "cb00edc",
-      "last_commit_subject": "docs(closeout): [macro-web] [MACRO-279] log in-app article reading via Custom Tabs",
+      "last_commit_hash": "a77027c",
+      "last_commit_subject": "docs(record): [macro-web] [MACRO-280] record mobile chart fix",
       "remote_url": "git@github.com-supanut9:supanut9/work-log.git",
       "attention": "dirty"
     },
