@@ -1,5 +1,5 @@
 {
-  "captured_at": "2026-09-10T03:34:29.973Z",
+  "captured_at": "2026-09-11T06:33:36.462Z",
   "fetch_performed": false,
   "db_write_performed": false,
   "source": "scanner",
@@ -60,8 +60,8 @@
       "behind": 0,
       "has_origin": true,
       "fetch_status": "not_fetched",
-      "last_commit_hash": "a77027c",
-      "last_commit_subject": "docs(record): [macro-web] [MACRO-280] record mobile chart fix",
+      "last_commit_hash": "e9f56b7",
+      "last_commit_subject": "docs(record): [macro-web] [MACRO-280] record production chart QA",
       "remote_url": "git@github.com-supanut9:supanut9/work-log.git",
       "attention": "dirty"
     },
@@ -1178,8 +1178,8 @@
       "behind": 0,
       "has_origin": true,
       "fetch_status": "not_fetched",
-      "last_commit_hash": "58105dd",
-      "last_commit_subject": "fix(charts): [MACRO-280] fill mobile chart viewport",
+      "last_commit_hash": "e69575a",
+      "last_commit_subject": "feat(inflation): [MACRO-281] compare CPI and PPI",
       "remote_url": "git@github.com-supanut9:supanut9/macro-web.git",
       "attention": ""
     }
