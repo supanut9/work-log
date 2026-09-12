@@ -1,5 +1,5 @@
 {
-  "captured_at": "2026-09-12T05:33:34.798Z",
+  "captured_at": "2026-09-12T05:39:18.653Z",
   "fetch_performed": false,
   "db_write_performed": false,
   "source": "scanner",
@@ -60,8 +60,8 @@
       "behind": 0,
       "has_origin": true,
       "fetch_status": "not_fetched",
-      "last_commit_hash": "d5a12cb",
-      "last_commit_subject": "docs(record): [macro-web] [MACRO-281] record inflation section",
+      "last_commit_hash": "70086d3",
+      "last_commit_subject": "docs(record): [macro-web] [MACRO-282] record inflation correctness",
       "remote_url": "git@github.com-supanut9:supanut9/work-log.git",
       "attention": "dirty"
     },
@@ -1178,8 +1178,8 @@
       "behind": 0,
       "has_origin": true,
       "fetch_status": "not_fetched",
-      "last_commit_hash": "716649a",
-      "last_commit_subject": "fix(inflation): [MACRO-282] refresh exact BLS readings",
+      "last_commit_hash": "8388fce",
+      "last_commit_subject": "fix(data): [MACRO-282] keep FRED failures retryable",
       "remote_url": "git@github.com-supanut9:supanut9/macro-web.git",
       "attention": ""
     }
