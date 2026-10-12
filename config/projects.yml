@@ -448,3 +448,21 @@ projects:
     push_policy: push_after_verified_slice
     milestone_git_tags: phase_closeout
     stats: [git_health, progress_health]
+
+  - id: portfolio-manager-web
+    name: portfolio-manager-web
+    path: ../portfolio-manager-web
+    enabled: true
+    product: portfolio
+    repo_kind: nested_git
+    app_kind: web
+    tags: [frontend, fullstack, portfolio, finance, active]
+    tech: [nextjs, react, typescript, tailwind, drizzle, postgres, better-auth, bun]
+    task_board: null
+    phase_docs: [../portfolio-manager-plan.md]
+    architecture_docs: [../portfolio-manager-plan.md, ../portfolio-manager-web/README.md]
+    runbooks: [../docs/deploy/vercel-deploy-runbook.md]
+    branch_policy: main_verified_slice
+    push_policy: push_after_verified_slice
+    milestone_git_tags: phase_closeout
+    stats: [git_health, progress_health]
