@@ -466,3 +466,15 @@ projects:
     push_policy: push_after_verified_slice
     milestone_git_tags: phase_closeout
     stats: [git_health, progress_health]
+  - id: folio-android
+    name: folio-android
+    path: ../folio-android
+    enabled: true
+    product: portfolio
+    repo_kind: nested_git
+    app_kind: android
+    tags: [android, twa, portfolio, finance, active]
+    tech: [android, gradle, trusted-web-activity, androidbrowserhelper]
+    task_board: null
+    phase_docs: [../portfolio-manager-plan.md]
+    architecture_docs: [../folio-android/README.md]
