@@ -1,5 +1,5 @@
 {
-  "captured_at": "2026-10-22T04:34:19.883Z",
+  "captured_at": "2026-10-22T07:52:35.148Z",
   "fetch_performed": false,
   "db_write_performed": false,
   "source": "scanner",
@@ -60,8 +60,8 @@
       "behind": 0,
       "has_origin": true,
       "fetch_status": "not_fetched",
-      "last_commit_hash": "e728f12",
-      "last_commit_subject": "docs(log-entry): [portfolio-manager-web] [PM-052] log holdings sort",
+      "last_commit_hash": "4548c5b",
+      "last_commit_subject": "docs(record): [portfolio-manager-web] [PM-053] record overnight quote release",
       "remote_url": "git@github.com-supanut9:supanut9/work-log.git",
       "attention": "dirty"
     },
@@ -1235,8 +1235,8 @@
       "behind": 0,
       "has_origin": true,
       "fetch_status": "not_fetched",
-      "last_commit_hash": "0d6fd9d",
-      "last_commit_subject": "feat(market): [PM-053] show free overnight quotes and timestamps",
+      "last_commit_hash": "3a52389",
+      "last_commit_subject": "fix(valuation): [PM-054] follow latest prices across market sessions",
       "remote_url": "git@github.com-supanut9:supanut9/portfolio-manager-web.git",
       "attention": ""
     },
