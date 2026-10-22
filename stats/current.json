@@ -1,12 +1,12 @@
 {
-  "captured_at": "2026-09-24T12:20:05.771Z",
+  "captured_at": "2026-10-22T04:34:19.883Z",
   "fetch_performed": false,
   "db_write_performed": false,
   "source": "scanner",
   "totals": {
-    "configured_projects": 25,
-    "git_projects": 21,
-    "clean_git_projects": 11,
+    "configured_projects": 27,
+    "git_projects": 23,
+    "clean_git_projects": 13,
     "dirty_projects": 8,
     "commits_left_to_push_projects": 3,
     "behind_projects": 0,
@@ -14,7 +14,7 @@
     "missing_origin_projects": 1,
     "fetch_failed_projects": 0,
     "missing_path_projects": 0,
-    "no_task_board_projects": 8,
+    "no_task_board_projects": 10,
     "no_phase_docs_projects": 5
   },
   "projects": [
@@ -55,13 +55,13 @@
       "exists": true,
       "is_git_repo": true,
       "branch": "main",
-      "dirty_files": 1,
+      "dirty_files": 3,
       "ahead": 0,
       "behind": 0,
       "has_origin": true,
       "fetch_status": "not_fetched",
-      "last_commit_hash": "abda018",
-      "last_commit_subject": "docs(record): [macro-web] [MACRO-285] record crypto markets release",
+      "last_commit_hash": "e728f12",
+      "last_commit_subject": "docs(log-entry): [portfolio-manager-web] [PM-052] log holdings sort",
       "remote_url": "git@github.com-supanut9:supanut9/work-log.git",
       "attention": "dirty"
     },
@@ -158,8 +158,8 @@
       "behind": 0,
       "has_origin": true,
       "fetch_status": "not_fetched",
-      "last_commit_hash": "8af6dab",
-      "last_commit_subject": "fix(security): [AUTH-000] patch 16 HIGH dependency vulnerabilities",
+      "last_commit_hash": "5f6cafa",
+      "last_commit_subject": "feat(provider): [PM-039] show the provider's account chooser on login",
       "remote_url": "git@github.com-supanut9:supanut9/auth-server.git",
       "attention": ""
     },
@@ -1181,6 +1181,105 @@
       "last_commit_hash": "f50943d",
       "last_commit_subject": "docs(crypto): [MACRO-286] record production verification",
       "remote_url": "git@github.com-supanut9:supanut9/macro-web.git",
+      "attention": ""
+    },
+    {
+      "id": "portfolio-manager-web",
+      "name": "portfolio-manager-web",
+      "path": "../portfolio-manager-web",
+      "enabled": true,
+      "product": "portfolio",
+      "repo_kind": "nested_git",
+      "app_kind": "web",
+      "tags": [
+        "frontend",
+        "fullstack",
+        "portfolio",
+        "finance",
+        "active"
+      ],
+      "tech": [
+        "nextjs",
+        "react",
+        "typescript",
+        "tailwind",
+        "drizzle",
+        "postgres",
+        "better-auth",
+        "bun"
+      ],
+      "task_board": null,
+      "phase_docs": [
+        "../portfolio-manager-plan.md"
+      ],
+      "architecture_docs": [
+        "../portfolio-manager-plan.md",
+        "../portfolio-manager-web/README.md"
+      ],
+      "runbooks": [
+        "../docs/deploy/vercel-deploy-runbook.md"
+      ],
+      "branch_policy": "main_verified_slice",
+      "push_policy": "push_after_verified_slice",
+      "milestone_git_tags": "phase_closeout",
+      "stats": [
+        "git_health",
+        "progress_health"
+      ],
+      "absolute_path": "/Users/supanut.tan/projects/supanut9/portfolio-manager-web",
+      "exists": true,
+      "is_git_repo": true,
+      "branch": "main",
+      "dirty_files": 0,
+      "ahead": 0,
+      "behind": 0,
+      "has_origin": true,
+      "fetch_status": "not_fetched",
+      "last_commit_hash": "0d6fd9d",
+      "last_commit_subject": "feat(market): [PM-053] show free overnight quotes and timestamps",
+      "remote_url": "git@github.com-supanut9:supanut9/portfolio-manager-web.git",
+      "attention": ""
+    },
+    {
+      "id": "folio-android",
+      "name": "folio-android",
+      "path": "../folio-android",
+      "enabled": true,
+      "product": "portfolio",
+      "repo_kind": "nested_git",
+      "app_kind": "android",
+      "tags": [
+        "android",
+        "twa",
+        "portfolio",
+        "finance",
+        "active"
+      ],
+      "tech": [
+        "android",
+        "gradle",
+        "trusted-web-activity",
+        "androidbrowserhelper"
+      ],
+      "task_board": null,
+      "phase_docs": [
+        "../portfolio-manager-plan.md"
+      ],
+      "architecture_docs": [
+        "../folio-android/README.md"
+      ],
+      "absolute_path": "/Users/supanut.tan/projects/supanut9/folio-android",
+      "exists": true,
+      "is_git_repo": true,
+      "branch": "main",
+      "dirty_files": 0,
+      "ahead": 0,
+      "behind": 0,
+      "has_origin": true,
+      "fetch_status": "not_fetched",
+      "last_commit_hash": "f7dffd1",
+      "last_commit_subject": "fix(android): [PM-043] launch like Google's twa-basic; report version; release script",
+      "remote_url": "git@github.com-supanut9:supanut9/folio-android.git",
       "attention": ""
     }
   ]

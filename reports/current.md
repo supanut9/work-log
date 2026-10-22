@@ -1,6 +1,6 @@
 # Supanut9 Work Log Current Report
 
-Captured: 2026-09-24T12:20:05.771Z
+Captured: 2026-10-22T04:34:19.883Z
 
 Fetch performed: no
 
@@ -8,9 +8,9 @@ Source: scanner
 
 ## Summary
 
-- Configured projects: 25
-- Git projects: 21
-- Clean git projects: 11
+- Configured projects: 27
+- Git projects: 23
+- Clean git projects: 13
 - Dirty projects: 8
 - Projects with commits left to push: 3
 - Behind origin: 0
@@ -18,14 +18,14 @@ Source: scanner
 - Missing origin: 1
 - Fetch failed: 0
 - Missing paths: 0
-- No task board: 8
+- No task board: 10
 - No phase docs: 5
 
 ## Repos Needing Attention
 
 | Project | Product | Branch | Dirty | Ahead | Behind | Origin | Status |
 | --- | --- | --- | ---: | ---: | ---: | --- | --- |
-| `work-log` | tracker | main | 1 | 0 | 0 | yes | dirty |
+| `work-log` | tracker | main | 3 | 0 | 0 | yes | dirty |
 | `ai-engineering-system` | ai-engineering | main | 10 | 0 | 0 | yes | dirty |
 | `interview-api` | interview | main | 0 | 1 | 0 | yes | commits to push |
 | `interview-web` | interview | main | 2 | 7 | 0 | yes | commits to push |
@@ -50,7 +50,7 @@ Source: scanner
 
 | Project | Product | Branch | Dirty | Ahead | Behind | Origin | Status |
 | --- | --- | --- | ---: | ---: | ---: | --- | --- |
-| `work-log` | tracker | main | 1 | 0 | 0 | yes | dirty |
+| `work-log` | tracker | main | 3 | 0 | 0 | yes | dirty |
 | `ai-engineering-system` | ai-engineering | main | 10 | 0 | 0 | yes | dirty |
 | `interview-web` | interview | main | 2 | 7 | 0 | yes | commits to push |
 | `knowledge-web` | knowledge | main | 6 | 0 | 0 | yes | dirty |
@@ -104,6 +104,8 @@ _None._
 - orchestra: `orchestra`.
   Phase docs: ../orchestra/ROADMAP.md.
 - portal: `portal-api`, `portal-web`.
+- portfolio: `portfolio-manager-web`, `folio-android`.
+  Phase docs: ../portfolio-manager-plan.md.
 - tracker: `work-log`.
   Phase docs: README.md.
 - trading: `trading-api`, `trading-web`.
@@ -117,7 +119,7 @@ Use the task boards and phase docs above as the next-plan source. Projects witho
 
 | Project | Product | Branch | Dirty | Ahead | Behind | Origin | Status |
 | --- | --- | --- | ---: | ---: | ---: | --- | --- |
-| `work-log` | tracker | main | 1 | 0 | 0 | yes | dirty |
+| `work-log` | tracker | main | 3 | 0 | 0 | yes | dirty |
 | `auth-ui` | auth | main | 0 | 0 | 0 | yes | ok |
 | `auth-server` | auth | main | 0 | 0 | 0 | yes | ok |
 | `ai-engineering-system` | ai-engineering | main | 10 | 0 | 0 | yes | dirty |
@@ -142,4 +144,6 @@ Use the task boards and phase docs above as the next-plan source. Projects witho
 | `trading-api` | trading |  | 0 |  |  | no | ok |
 | `trading-web` | trading |  | 0 |  |  | no | ok |
 | `macro-web` | macro | main | 0 | 0 | 0 | yes | ok |
+| `portfolio-manager-web` | portfolio | main | 0 | 0 | 0 | yes | ok |
+| `folio-android` | portfolio | main | 0 | 0 | 0 | yes | ok |
 
