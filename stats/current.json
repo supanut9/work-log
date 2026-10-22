@@ -1,5 +1,5 @@
 {
-  "captured_at": "2026-10-22T12:30:02.197Z",
+  "captured_at": "2026-10-22T17:17:56.356Z",
   "fetch_performed": false,
   "db_write_performed": false,
   "source": "scanner",
@@ -60,8 +60,8 @@
       "behind": 0,
       "has_origin": true,
       "fetch_status": "not_fetched",
-      "last_commit_hash": "04be65a",
-      "last_commit_subject": "docs(record): [portfolio-manager-web] [PM-054] record latest-session valuations",
+      "last_commit_hash": "5ce4822",
+      "last_commit_subject": "docs(record): [portfolio-manager-web] [PM-055] record Thai news translation",
       "remote_url": "git@github.com-supanut9:supanut9/work-log.git",
       "attention": "dirty"
     },
@@ -1235,8 +1235,8 @@
       "behind": 0,
       "has_origin": true,
       "fetch_status": "not_fetched",
-      "last_commit_hash": "5f17d69",
-      "last_commit_subject": "feat(news): [PM-055] add Thai headline translation toggle",
+      "last_commit_hash": "8fc7617",
+      "last_commit_subject": "feat(insights): [PM-056] [PM-057] add performance history and My news",
       "remote_url": "git@github.com-supanut9:supanut9/portfolio-manager-web.git",
       "attention": ""
     },
