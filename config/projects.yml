@@ -496,3 +496,21 @@ projects:
     push_policy: push_after_verified_slice
     milestone_git_tags: phase_closeout
     stats: [git_health, progress_health]
+
+  - id: pdf-web
+    name: pdf-web
+    path: ../pdf-web
+    enabled: true
+    product: pdf
+    repo_kind: nested_git
+    app_kind: web
+    tags: [frontend, pdf, tools, active]
+    tech: [nextjs, react, typescript, tailwind, pdf-lib, pdfjs, vitest, bun]
+    task_board: null
+    phase_docs: [../../supanut9-pdf-awo/pdf-plan.md]
+    architecture_docs: [../../supanut9-pdf-awo/pdf-plan.md]
+    runbooks: [../docs/deploy/vercel-deploy-runbook.md]
+    branch_policy: main_verified_slice
+    push_policy: push_after_verified_slice
+    milestone_git_tags: phase_closeout
+    stats: [git_health, progress_health]
