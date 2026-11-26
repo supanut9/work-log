@@ -514,3 +514,21 @@ projects:
     push_policy: push_after_verified_slice
     milestone_git_tags: phase_closeout
     stats: [git_health, progress_health]
+
+  - id: game-forge
+    name: game-forge
+    path: ../game-forge
+    enabled: true
+    product: game-forge
+    repo_kind: nested_git
+    app_kind: workspace-template
+    tags: [games, ai-workflow, awo, template, active]
+    tech: [bun, typescript, phaser, vite, awo, json-schema]
+    task_board: null
+    phase_docs: [../game-forge-plan.md]
+    architecture_docs: [../game-forge/AGENTS.md, ../game-forge/README.md]
+    runbooks: []
+    branch_policy: main_verified_slice
+    push_policy: push_after_verified_slice
+    milestone_git_tags: release_only
+    stats: [git_health, progress_health]
