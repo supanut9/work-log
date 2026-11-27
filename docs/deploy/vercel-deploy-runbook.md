@@ -20,7 +20,7 @@ Observed with `vercel project list` on 2026-05-22.
 
 | Local directory | Vercel project | Latest production URL | Runtime shape |
 | --- | --- | --- | --- |
-| `auth-server` | `supanut9-auth-server` | `https://supanut9-auth-server.vercel.app` | Go/function-shaped auth API |
+| `auth-server` | `supanut9-auth-server` | `https://supanut9-auth-server.vercel.app` | Rust (axum) function-shaped auth API (Go until 2026-11-27, tag `go-final`) |
 | `auth-ui` | `supanut9-auth-ui` | `https://supanut9-auth-ui.vercel.app` | Hosted auth UI |
 | `interview-api` | `supanut9-interview-api` | `https://supanut9-interview-api.vercel.app` | API on Vercel with Neon |
 | `interview-web` | `interview-web` | `https://interview-web-beta.vercel.app` | Next.js web |

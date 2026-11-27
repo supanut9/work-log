@@ -43,7 +43,7 @@ projects:
     repo_kind: nested_git
     app_kind: api
     tags: [backend, oauth, oidc, active]
-    tech: [go, postgres, redis]
+    tech: [rust, postgres]
     task_board: ../docs/auth/phase-1-task-board.md
     phase_docs: [../docs/auth/phase-2-plan.md]
     architecture_docs: [../docs/auth/architecture-overview.md, ../docs/auth/auth-flow.md]
